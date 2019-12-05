@@ -62,69 +62,84 @@ function play(){
         nowActive = nowActive -1;
         document.getElementById('rich').innerHTML = money;
 		musicEnding();
+        // 骰到第一個格子(橘子)，獲得1.1倍
         if(nowActive==0){
             lottery = thisBet[0];
             lottery = Math.floor(lottery*1.1);
         }
+        // 骰到第二個格子(黑蘋果)，獲得1.6倍
         if(nowActive==1){
             lottery = thisBet[1];
-            lottery = Math.floor(lottery*1.5);
+            lottery = Math.floor(lottery*1.6);
         }
+        // 骰到第三個格子(檸檬)，獲得1.2倍
         if(nowActive==2){
             lottery = thisBet[2];
-            lottery = Math.floor(lottery*1.1);
+            lottery = Math.floor(lottery*1.2);
         }
+        // 骰到第四個格子(西瓜)，獲得1.5倍
         if(nowActive==3){
             lottery = thisBet[3];
-            lottery = Math.floor(lottery*1.1);
+            lottery = Math.floor(lottery*1.5);
         }
+        // 骰到第五個格子(摩艾)，獲得1.1倍
         if(nowActive==4){
             lottery = thisBet[4];
             lottery = Math.floor(lottery*1.1);
         }
+        // 骰到第六個格子(發大財)，獲得500倍
         if(nowActive==5){
             lottery = thisBet[5];
-            lottery = Math.floor(lottery*5);
+            lottery = Math.floor(lottery*500);
         }
+        // 骰到第七個格子(紅寶石)，獲得5倍
         if(nowActive==6){
             lottery = thisBet[6];
-            lottery = Math.floor(lottery+10000);
+            lottery = Math.floor(lottery*5);
         }
+        // 骰到第八個格子(櫻桃)，獲得1.5倍
         if(nowActive==7){
             lottery = thisBet[7];
             lottery = Math.floor(lottery*1.5);
         }
+        // 骰到第九個格子(黑蘋果)，獲得1.6倍
         if(nowActive==8){
             lottery = thisBet[8];
-            lottery = Math.floor(lottery*1.1);
+            lottery = Math.floor(lottery*1.6);
         }
-        
+        // 骰到第十個格子(檸檬)，獲得1.2倍
         if(nowActive==9){
             lottery = thisBet[9];
-            lottery = Math.floor(lottery*1.5);
+            lottery = Math.floor(lottery*1.2);
         }
+        // 骰到第十一個格子(西瓜)，獲得1.5倍
         if(nowActive==10){
             lottery = thisBet[10];
-            lottery = Math.floor(lottery*1.1);
+            lottery = Math.floor(lottery*1.5);
            
         }
+        // 骰到第十二個格子(摩艾)，獲得1.1倍
         if(nowActive==11){
             lottery = thisBet[11];
             lottery = Math.floor(lottery*1.1);
         }
+        // 骰到第十三個格子(888)
         if(nowActive==12){
             lottery = thisBet[12];
-            lottery = Math.floor(lottery*1.5);
+            lottery = Math.floor(lottery+888);
         }
+        // 骰到第十四個格子(紅寶石)，獲得5倍
         if(nowActive==13){
             lottery = thisBet[13];
-            lottery = Math.floor(lottery*10);
+            lottery = Math.floor(lottery*5);
         }
+        // 如果沒有中獎
         if(lottery ==0){
             $('.popWindow-mdfk').fadeIn(300);
             money = money+lottery;
             $('.rewardPost').html(lottery+'元');
         }
+        // 如果中獎的話，則顯示中獎資訊
         else{
             $('.popWindow').fadeIn(300);
             Math.floor(lottery);
@@ -142,7 +157,7 @@ function play(){
                 nowActive = 0;
             }
         } 
-         console.log('nowActive='+nowActive);
+        console.log('nowActive='+nowActive);
 		music();
 	}
 	else{  

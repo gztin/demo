@@ -165,7 +165,7 @@ body {
 }
 .news{
 	color:#fff;
-	font-size: calc(0.5rem + (0.7-0.5) * ((100vw - 600px) / (1200 - 600)));
+	font-size: calc(1rem + (0.7-0.5) * ((100vw - 600px) / (1200 - 600)));
 	width:98%;
 	flex: 0.5;
 }
@@ -213,72 +213,73 @@ body {
 .money p{color:#fff;}
 .item0 {
   order: 1;
-  background: url(https://upload.cc/i1/2019/06/02/pk1Zx2.jpg)no-repeat;
+  background: url(https://upload.cc/i1/2019/05/30/9zAsBF.png)no-repeat;
   background-size: cover;
 }
 .item1 {
   order: 2;
-  background: url(https://upload.cc/i1/2019/06/02/YlIfJ2.jpg)no-repeat;
+  background: url(https://upload.cc/i1/2019/05/30/mp6jxt.png)no-repeat;
   background-size: cover;
 }
 .item2 {
   order: 3;
-  background: url(https://upload.cc/i1/2019/06/02/CIWt0U.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/2Xwuoy.png)no-repeat center;
   background-size: cover;
 }
 .item3 {
   order: 4;
-  background: url(https://upload.cc/i1/2019/06/02/mHb2oy.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/hjyukn.png)no-repeat center;
   background-size: cover;
 }
 .item4 {
   order: 5;
-  background: url(https://upload.cc/i1/2019/06/02/zv9Apx.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/vWh4fZ.png)no-repeat center;
   background-size: cover;
 }
 .item5 {
   order: 7;
   margin-left: calc(60% + 10px);
-  background: url(https://upload.cc/i1/2019/06/02/4JSQFj.jpg)no-repeat;background-size: cover;
+  background: url(https://upload.cc/i1/2019/06/02/B0ZmHC.jpg)no-repeat;
+  background-size: cover;
 }
 .item6 {
   order: 9;
   margin-left: calc(60% + 10px);
-  background: url(https://upload.cc/i1/2019/06/02/B0ZmHC.jpg)no-repeat;
+  background: url(https://upload.cc/i1/2019/12/05/xASbJl.jpg)no-repeat center;
   background-size: cover;
 }
 .item7 {
   order: 14;
-  background: url(https://upload.cc/i1/2019/06/02/dtfAGU.jpg)no-repeat;
+  background: url(https://upload.cc/i1/2019/05/30/zKJUZH.png)no-repeat;
   background-size: cover;
 }
 .item8 {
   order: 13;
-  background: url(https://upload.cc/i1/2019/06/02/YlIfJ2.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/mp6jxt.png)no-repeat;
   background-size: cover;
 }
 .item9 {
   order: 12; 
-  background: url(https://upload.cc/i1/2019/06/02/VhBFMj.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/2Xwuoy.png)no-repeat center;
   background-size: cover;
 }
 .item10 {
   order: 11;
-  background: url(https://upload.cc/i1/2019/06/02/mHb2oy.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/hjyukn.png)no-repeat center;
   background-size: cover;
 }
 .item11 {
   order: 10;
-  background: url(https://upload.cc/i1/2019/06/02/zv9Apx.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/05/30/vWh4fZ.png)no-repeat center;
   background-size: cover;
 }
 .item12 {
   order: 8;
-  background: url(https://upload.cc/i1/2019/06/02/pKThXW.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/12/05/ykLTSb.jpg)no-repeat;
   background-size: cover;
 }
 .item13 {
   order: 6;
-  background: url(https://upload.cc/i1/2019/06/02/A4Qmcv.jpg)no-repeat center;
+  background: url(https://upload.cc/i1/2019/12/05/xASbJl.jpg)no-repeat center;
   background-size: cover;
 }
