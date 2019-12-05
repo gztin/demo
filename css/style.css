@@ -26,13 +26,13 @@ body {
     ;display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10% auto;
+    margin: 25% auto;
     flex-direction: column;
     color: #000;
     text-shadow: 1px 3px 3px #888;
 }
 .msg-mdfk{
-	background: #000;
+	background: #3c3c3c;
 }
 
 .msg p,.msg-mdfk p {
