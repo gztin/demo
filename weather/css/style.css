@@ -4,6 +4,7 @@ body{
     background: -webkit-linear-gradient(90deg, #4ACCBF 27%, #2B9FC9 60%);
     background: -o-linear-gradient(90deg, #4ACCBF 27%, #2B9FC9 60%);
     height:100vh;
+    font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
 }
 #weather{
     width:100%;
@@ -37,10 +38,12 @@ body{
     background: #2b9fc9;
     font-size: 2em;
     color:#fff;
+    font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
 }
 .tempInf,.tempContent,.status{
     text-align: center;
     margin:10px;
+    font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
 }
 
 
