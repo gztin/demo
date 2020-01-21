@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>火車查詢</title>
+<link rel="stylesheet" href="./weather/css/style_train.css">
+</head>
+
+<body>
+    <div class="searchInf">
+        <form action="" method="GET" style="display:flex;justify-content: space-around;width:70%;">
+            <select class="start"></select>
+            <div class="switch"></div>
+            <select class="end"></select>
+        </form>
+    </div>
+    <script>
+        function loadInf(){
+            fetch('https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/DailyTrainTimetable/Today?$format=JSON', {})
+            .then((response) => {
+                // 可以透過 blob(), json(), text() 轉成可用的資訊
+                return response.json(); 
+            }).then((jsonData) => {
+                var work = new Array(1000);
+                work = jsonData;
+//                $('.start').append('<option value = "37">'+jsonData[37].StationName.Zh_tw+'</option>');
+//                $('.end').append('<option value = "5">'+jsonData[5].StationName.Zh_tw+'</option>');
+//                var total = 228;
+//                var count = 0;
+//                while(count < total){
+//                    $('.start').append('<option value="'+count+'">'+jsonData[count].StationName.Zh_tw+'</option>');
+//                    $('.end').append('<option value="'+count+'">'+jsonData[count].StationName.Zh_tw+'</option>');
+//                    count++;
+//                }
+            }).catch((err) => {
+                console.log('錯誤:', err);
+            });
+        }
+        function search(){
+            fetch('https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/DailyTrainTimetable/Today?$count=true&$format=JSON', {})
+            .then((response) => {
+                // 可以透過 blob(), json(), text() 轉成可用的資訊
+                return response.json(); 
+            }).then((jsonData) => {
+                
+               
+            }).catch((err) => {
+                console.log('錯誤:', err);
+            });
+            
+        }
+        
+        loadInf();
+    </script>
+</body>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
