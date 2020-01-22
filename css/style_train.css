@@ -31,7 +31,7 @@ body{
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
     .switch{
-        background: url(arrow.png);
+        background: url("../img/arrow.png");
     }
     select{
         appearance:none;
