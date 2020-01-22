@@ -30,7 +30,9 @@ body{
         background: #2b9fc9;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
-    
+    .switch{
+        background: url(./img/arrow.png);
+    }
     select{
         appearance:none;
         -moz-appearance:none;
