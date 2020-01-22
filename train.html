@@ -8,14 +8,24 @@
 
 <body>
     <div id="app" class="searchInf">
-        <form action="" method="GET" style="display:flex;justify-content: space-around;width:70%;">
-            <select class="start" v-model="selectedStart">
-                <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
-            </select>
-            <div class="switch"></div>
-            <select class="end" v-model="selectedEnd">
-                <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
-            </select>
+        <form class="plan" action="" method="GET" style="">
+            <div class="trainClass">
+                <select class="start" v-model="selectedStart">
+                    <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
+                </select>
+                <div class="switch"></div>
+                <select class="end" v-model="selectedEnd">
+                    <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
+                </select>
+            </div>
+            <div class="timeInf">
+                <div id="timeNow">
+                    <select name="timeSelect" id=""><option v-for="option in timeChoice" >{{option.clock}}</option></select>
+                </div>
+                <div id="dayNow">
+                    <select name="daySelect" id=""><option v-for="option in dayChoice" >{{option.today}}</option></select>
+                </div>
+            </div>
         </form>
     </div>
     <script>
@@ -23,5 +33,6 @@
     </script>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/train.js"></script>
 </html>
