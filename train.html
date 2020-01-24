@@ -3,36 +3,197 @@
 <head>
 <meta charset="utf-8">
 <title>火車查詢</title>
-<link rel="stylesheet" href="./css/style_train.css?v=12">
+<link rel="stylesheet" href="./css/style_train.css?v=13">
+<link rel="stylesheet" href="./css/dayView.css?v=1">
 </head>
 
 <body>
+    <div class="listView">
+        <div class="tripInf">
+            <div class="tripContent">
+                <p class="tripStart"></p>
+                <span></span>
+                <p class="tripEnd"></p>
+            </div>
+            <div class="tripContent">
+                <p class="tripDate"></p>
+                <p class="tripDay"></p>
+                <p class="tripTime"></p>
+            </div>
+        </div>
+        <ul></ul>
+    </div>
+    <div class="calender" style="display:none;">
+        <p class="title">選擇日期</p>
+        <div>
+            <ul class="list"></ul>
+        </div>
+    </div>
+    <div class="bg" style="display:none;"></div>
     <div id="app" class="searchInf">
-        <form class="plan" action="" method="GET" style="">
+        <form id="plan" class="plan" name="plan" action="" method="post" >
             <div class="trainClass">
-                <select class="start" v-model="selectedStart">
-                    <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
+                <select id="start" class="start" >
+                    <option v-for="option in station" v-bind:value="option.stationNumber">{{option.stationName}}</option>
                 </select>
                 <div class="switch"></div>
-                <select class="end" v-model="selectedEnd">
-                    <option v-for="option in station" v-bind:value="option.stationName">{{option.stationName}}</option>
+                <select id="end" class="end" >
+                    <option v-for="option in station" v-bind:value="option.stationNumber">{{option.stationName}}</option>
                 </select>
             </div>
             <div class="timeInf">
-                <div id="timeNow">
-                    <select name="timeSelect" id=""><option v-for="option in timeChoice" >{{option.clock}}</option></select>
+                <div id="timeStart">
+                    <span>出發時間</span><select name="selectTime1" id="selectTime1"><option v-for="option in timeRange" >{{option.clock}}</option></select>
                 </div>
-                <div id="dayNow">
-                    <select name="daySelect" id=""><option v-for="option in dayChoice" >{{option.today}}</option></select>
+                
+                <div id="timeEnd">
+                    <span>抵達時間</span><select name="selectTime2" id="selectTime2"><option v-bind:value="option.clock" v-for="option in timeRange" >{{option.clock}}</option></select>
                 </div>
             </div>
+            <div class="dayPick">
+                <p>乘車日期</p><span id="selectDay"><p></p><span></span></span>
+            </div>
+            <a href="javascript:;" type="submit" id="sendMsg" class="sendMsg">查詢</a>
         </form>
-    </div>
-    <script>
-        
-    </script>
+    </div>    
+</div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/train.js"></script>
+
+<script>
+    $('#end option[value=4400]').attr('selected', 'selected');
+    $('#timeEnd option[value=08-00]').attr('selected', 'selected');
+    // 日期顯示
+    var dateObj = new Date();
+    var D = dateObj.getDate();
+    var Y = dateObj.getFullYear();
+    var Mh = dateObj.getMonth() + 1;
+    if(Mh > 12) Mh = 01;
+    if(Mh < 10) Mh = '0'+Mh;
+    var weekday = new Array(7);
+        weekday[0] = "日";
+        weekday[1] = "一";
+        weekday[2] = "二";
+        weekday[3] = "三";
+        weekday[4] = "四";
+        weekday[5] = "五";
+        weekday[6] = "六";
+    var today = weekday[dateObj.getDay()];
+    
+    $('#selectDay').html('<p>'+Y +'-'+Mh+'-'+D+'</p>'+'<div>'+'('+'<span>'+today+'</span>'+')'+'</div>');
+
+    // 顯示可購票日期
+    function dispTime() { 
+        for(i=0;i<9;i++){
+            function GetDateStr(i){ 
+                var dd = new Date();
+                dd.setDate(dd.getDate()+i);//获取AddDayCount天后的日期
+                var y = dd.getFullYear(); 
+                var m = (dd.getMonth()+1)<10?"0"+(dd.getMonth()+1):(dd.getMonth()+1);//获取当前月份的日期，不足10补0
+                var d = dd.getDate()<10?"0"+dd.getDate():dd.getDate();//获取当前几号，不足10补0
+                return y+"-"+m+"-"+d; 
+            }
+            function GetDayStr(i){ 
+                var dd = new Date();
+                dd.setDate(dd.getDate()+i);//获取AddDayCount天后的日期
+                var weekday = new Array(7);
+                    weekday[0] = "日";
+                    weekday[1] = "一";
+                    weekday[2] = "二";
+                    weekday[3] = "三";
+                    weekday[4] = "四";
+                    weekday[5] = "五";
+                    weekday[6] = "六";
+                var today = weekday[dd.getDay()];
+                return today; 
+            }
+            $('.calender > div > ul').append('<li class="dayData">'+'<p>'+GetDateStr(i)+'</p>'+'<div>'+'('+'<span>'+GetDayStr(i)+'</span>'+')'+'</div>'+'</li>');
+        }
+    }
+    // var timerID = setInterval("dispTime()",1000);
+    dispTime();
+    
+    $('.dayPick').click(function(){
+        $('.bg').css('display','block');
+        $('.calender').css('display','flex');
+    });
+    $('.bg').click(function(){
+        $('.bg').css('display','none');
+        $('.calender').css('display','none');
+    });
+    $('ul.list > li').click(function(){
+        var index = $("ul.list > li").index(this);
+        var tempDate = $('.dayData').eq(index).find("p").text();
+        var tempDay = $('.dayData').eq(index).find("span").text();
+        $('#selectDay').find("p").html(tempDate);
+        $('#selectDay').find("span").html(tempDay);
+        $('.bg').css('display','none');
+        $('.calender').css('display','none');
+    });
+
+    // // JSON
+    $('.sendMsg').click(function(){
+        var startStation = $('.start').val();
+        var endStation = $('.end').val();
+        var startTime = $('#selectTime1').val();
+        var endTime = $('#selectTime2').val();
+        var rideDate = $('#selectDay').find("p").text();
+        if(startStation ==endStation){
+            alert('很抱歉，點跟終點不得為同一車站');
+        }
+        else if((startTime > endTime)||(startTime == endTime)){
+            alert('很抱歉，出發時間不得早於或等於抵達時間');
+        }
+        else{
+            const uri = "https://taiwan-train-api.herokuapp.com/train_api/" + startStation + "/"+ endStation + "/" + rideDate +"/" + startTime + "/" + endTime;
+            // const uri = "https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeByFrequency/Streaming/City/Hsinchu?$top=30&$format=JSON"
+            fetch(uri, {method:'GET'})
+            .then(res => {
+                return res.json();   // 使用 text() 可以得到純文字 String
+            })
+            .then(result => {
+                var dateObj = new Date();
+                var D = dateObj.getDate()  < 10 ? '0'+dateObj.getDate():dateObj.getDate();
+                var weekday = new Array(7);
+                    weekday[0] = "日";
+                    weekday[1] = "一";
+                    weekday[2] = "二";
+                    weekday[3] = "三";
+                    weekday[4] = "四";
+                    weekday[5] = "五";
+                    weekday[6] = "六";
+                var tripDay = weekday[dateObj.getDay()];
+                var startStation = $('.start').find('option:selected').text();
+                var endStation = $('.end').find('option:selected').text();
+                var tripDate = $('#selectDay').find("p").text();
+                var tripTime = $('#selectTime1').find('option:selected').text();
+                $('.tripStart').html(startStation);
+                $('.tripEnd').html(endStation);
+                $('.tripDate').html(tripDate);
+                $('.tripDay').html('週'+tripDay);
+                $('.tripTime').html(tripTime+'出發');
+
+                var dataList = result[0].complete_info.length;
+                var count =0;
+                for(count=0;count<dataList;count++){
+                    var car = result[0].complete_info[count];
+                    $('.listView > ul').append(
+                        '<li class="carInf">'+
+                        '<span class="carBlock">'+
+                        '<span class="carName">'+car.blockName+'</span>'+
+                        '</span>'+
+                        '<span class="carBlock">'+
+                        '<span class="carWay">'+car.start+'</span>'+'<span class="arrow"></span>'+'<span class="carWay">'+car.end+'</span>'+
+                        '</span>'+
+                        '</li>'
+                    );
+                }
+                $('.listView').slideToggle();
+            });
+        }
+    });
+</script>
 </html>
