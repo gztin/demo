@@ -360,6 +360,7 @@
             background-size: contain;
         }
         select{
+            padding: 0 0 0 20px;
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
