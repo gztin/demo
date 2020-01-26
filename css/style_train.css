@@ -83,6 +83,7 @@
         margin:20px;
         background-size: contain;
     }
+    
     select{
         appearance:none;
         -moz-appearance:none;
@@ -90,6 +91,8 @@
         text-align:center;
 	    text-align-last:center;/*兼容chrome*/
     }
+
+
     select > option{
         background: #424242;
     }
@@ -369,6 +372,9 @@
             -webkit-appearance:none;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
+        }
+        .trainClass select {
+            padding: 0 0 0 4%;
         }
         select > option{
             background: #424242;
