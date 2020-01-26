@@ -331,6 +331,7 @@
         }
         .timeInf span{
             /* margin:10px; */
+            width:100%;
             color:#fff;
             font-size:16px;
         }
