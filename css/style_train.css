@@ -277,8 +277,8 @@
         .searchInf{
             width: 85%;
             margin: 0 auto;
-            padding-top: 48%;
-            height: 100px;
+            padding-top: 28%;
+            height: auto;
             display: flex;
             justify-content: center;
             flex-direction: column;
