@@ -341,7 +341,9 @@
             font-size:16px;
         }
         .trainClass select {
-            padding: 0 0 0 10%;
+            margin:0 auto;
+            text-align:center;
+            text-align-last:center;/*兼容chrome*/
         }
         .start,.end{
             width: 114px;
