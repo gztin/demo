@@ -332,7 +332,7 @@
         .timeInf span{
             /* margin:10px; */
             color:#fff;
-            font-size: 1em;
+            font-size:16px;
         }
         .start,.end{
             width: 114px;
@@ -394,7 +394,7 @@
         }
         #timeStart select,#timeEnd select,#dayNow select{
             background:transparent;
-            font-size: 1.3em;
+            font-size: 20px;
             color: #fff;
             border:none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
