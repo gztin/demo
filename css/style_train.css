@@ -313,7 +313,7 @@
             align-items: center;
             display: flex;
             justify-content: center;
-            font-size: 1.4em;
+            font-size: 1.3em;
             color: #fff;
         }
         .timeInf p{
@@ -394,7 +394,7 @@
         }
         #timeStart select,#timeEnd select,#dayNow select{
             background:transparent;
-            font-size: 1.4em;
+            font-size: 1.3em;
             color: #fff;
             border:none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
