@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>火車查詢</title>
-    <link rel="stylesheet" href="./css/style_train.css?v=23">
+    <link rel="stylesheet" href="./css/style_train.css?v=24">
     <link rel="stylesheet" href="./css/dayView.css?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 </head>
@@ -43,7 +43,7 @@
                 </select>
             </div>
             <div class="timeInf">
-                <span>出發時間b</span><select id="timeStart" name="selectTime1" id="selectTime1"><option v-for="option in timeRange" >{{option.clock}}</option></select>
+                <span>出發時間c</span><select id="timeStart" name="selectTime1" id="selectTime1"><option v-for="option in timeRange" >{{option.clock}}</option></select>
                 <span>抵達時間</span><select id="timeEnd" name="selectTime2" id="selectTime2"><option v-bind:value="option.clock" v-for="option in timeRange" >{{option.clock}}</option></select>
             </div>
             <div class="dayPick">
