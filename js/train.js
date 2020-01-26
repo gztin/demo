@@ -244,9 +244,13 @@ let vm = new Vue({
     el:'#app',
     data:data
 });
-$('.switch').click(function(){
-    $('.switch').toggleClass('rotated');
-});
+// $('.switch').click(function(){
+//     $('.switch').toggleClass('rotated');
+// });
 
+$('.close').click(function(){
+    $('.listView').slideToggle();
+    $('.listView ul').html("");
+});
 
 

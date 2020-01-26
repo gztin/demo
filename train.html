@@ -12,9 +12,12 @@
     <div class="listView">
         <div class="tripInf">
             <div class="tripContent">
-                <p class="tripStart"></p>
-                <span></span>
-                <p class="tripEnd"></p>
+                <div class="tripPlace"><div class="close"><</div></div>
+                <div class="tripPlace">
+                    <p class="tripStart"></p>
+                    <span></span>
+                    <p class="tripEnd"></p>
+                </div>
             </div>
             <div class="tripContent">
                 <p class="tripDate"></p>
@@ -43,8 +46,14 @@
                 </select>
             </div>
             <div class="timeInf">
-                <span>出發時間d</span><select id="timeStart" name="selectTime1" id="selectTime1"><option v-for="option in timeRange" >{{option.clock}}</option></select>
-                <span>抵達時間</span><select id="timeEnd" name="selectTime2" id="selectTime2"><option v-bind:value="option.clock" v-for="option in timeRange" >{{option.clock}}</option></select>
+                <span>出發時間</span>
+                <select id="startTime" name="startTime">
+                    <option  v-for="option in timeRange" >{{option.clock}}</option>
+                </select>
+                <span>抵達時間</span>
+                <select id="endTime" name="endTime" >
+                    <option v-bind:value="option.clock" v-for="option in timeRange" >{{option.clock}}</option>
+                </select>
             </div>
             <div class="dayPick">
                 <p>乘車日期</p><span id="selectDay"><p></p><span></span></span>
@@ -61,7 +70,7 @@
 
 <script>
     $('#end option[value=4400]').attr('selected', 'selected');
-    $('#timeEnd option[value=08-00]').attr('selected', 'selected');
+    $('#endTime option[value=08-00]').attr('selected', 'selected');
     // 日期顯示
     var dateObj = new Date();
     var D = dateObj.getDate();
@@ -135,9 +144,11 @@
     $('.sendMsg').click(function() {
         var startStation = $('.start').val();
         var endStation = $('.end').val();
-        var startTime = $('#selectTime1').val();
-        var endTime = $('#selectTime2').val();
+        var startTime = $('#startTime').val();
+        var endTime = $('#endTime').val();
         var rideDate = $('#selectDay').find("p").text();
+        console.log('出發時間為'+ startTime);
+        console.log('抵達時間為'+ endTime);
         if (startStation == endStation) {
             alert('很抱歉，點跟終點不得為同一車站');
         } else if ((startTime > endTime) || (startTime == endTime)) {
@@ -166,7 +177,7 @@
                     var startStation = $('.start').find('option:selected').text();
                     var endStation = $('.end').find('option:selected').text();
                     var tripDate = $('#selectDay').find("p").text();
-                    var tripTime = $('#selectTime1').find('option:selected').text();
+                    var tripTime = $('#startTime').find('option:selected').text();
                     $('.tripStart').html(startStation);
                     $('.tripEnd').html(endStation);
                     $('.tripDate').html(tripDate);
