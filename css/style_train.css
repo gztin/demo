@@ -335,10 +335,13 @@
             font-size: 1.4em;
         }
         .timeInf span{
-            /* margin:10px; */
+            margin-left:5%;
             width:100%;
             color:#fff;
             font-size:16px;
+        }
+        .trainClass select {
+            padding: 0 0 0 10%;
         }
         .start,.end{
             width: 114px;
@@ -366,16 +369,13 @@
             background-size: contain;
         }
         select{
-            padding: 0 0 0 20px;
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
         }
-        .trainClass select {
-            padding: 0 0 0 10%;
-        }
+        
         select > option{
             background: #424242;
         }
