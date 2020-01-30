@@ -96,7 +96,8 @@
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
-        padding: 0 0 0 10%;
+        text-align:center;
+        text-align-last:center;/*兼容chrome*/
     }
 
 
@@ -408,7 +409,7 @@
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
-            padding: 0 0 0 10%;
+            padding:0 0 0 10%;
         }
         
         select > option{
@@ -719,7 +720,8 @@
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
-            padding: 0 0 0 10%;
+            text-align:center;
+            text-align-last:center;/*兼容chrome*/
         }
         
         select > option{
