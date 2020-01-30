@@ -75,6 +75,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align:center;
+        text-align-last:center;/*兼容chrome*/
         font-size: 2em;
         color:#fff;
         background: #2b9fc9;
@@ -96,8 +98,6 @@
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
-        text-align:center;
-        text-align-last:center;/*兼容chrome*/
     }
 
 
@@ -387,6 +387,7 @@
             border-radius: 10px;
             padding:0 0 10%;
             align-items: center;
+            padding:0 0 0 10%;
             font-size: 2em;
             color: #fff;
             background: #2b9fc9;
@@ -409,7 +410,6 @@
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
-            padding:0 0 0 10%;
         }
         
         select > option{
@@ -700,6 +700,8 @@
             text-align: center;
             justify-content: center;
             align-items: center;
+            text-align:center;
+            text-align-last:center;/*兼容chrome*/
             font-size: 3em;
             color: #fff;
             background: #2b9fc9;
@@ -720,8 +722,6 @@
             appearance:none;
             -moz-appearance:none;
             -webkit-appearance:none;
-            text-align:center;
-            text-align-last:center;/*兼容chrome*/
         }
         
         select > option{
