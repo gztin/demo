@@ -362,6 +362,7 @@
         }
         #selectDay p {
             flex:1;
+            font-size:25px;
         }
         #selectDay div{
             margin-right:10%;
