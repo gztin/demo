@@ -387,6 +387,7 @@
             border-radius: 10px;
             display: flex;
             text-align: center;
+            text-align-last: center;
             justify-content: center;
             align-items: center;
             font-size: 2em;
