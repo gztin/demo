@@ -393,6 +393,8 @@
             color: #fff;
             background: #2b9fc9;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
+            line-height:100px;
+            margin: auto;
         }
         #start > option,#end > option{
             font-size: 25px;
