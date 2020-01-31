@@ -61,7 +61,6 @@
             <a href="javascript:;" type="submit" id="sendMsg" class="sendMsg">查詢</a>
         </form>
     </div>
-    </div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
@@ -163,6 +162,7 @@
                     return res.json(); // 使用 text() 可以得到純文字 String
                 })
                 .then(result => {
+                    console.log(result);
                     var dateObj = new Date();
                     var D = dateObj.getDate() < 10 ? '0' + dateObj.getDate() : dateObj.getDate();
                     var weekday = new Array(7);
@@ -188,16 +188,71 @@
                     var count = 0;
                     for (count = 0; count < dataList; count++) {
                         var car = result[0].complete_info[count];
-                        $('.listView > ul').append(
-                            '<li class="carInf">' +
-                            '<span class="carBlock">' +
-                            '<span class="carName">' + car.blockName + '</span>' +
-                            '</span>' +
-                            '<span class="carBlock">' +
-                            '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
-                            '</span>' +
-                            '</li>'
-                        );
+                        if((car.blockName=='區間')||(car.blockName=='區間快')){
+                            $('.listView > ul').append(
+                            '<li class="carInf speed1">' +
+                                '<span class="carBlock">' +
+                                '<span class="carName car1">' + car.blockName + '</span>' +
+                                '</span>' +
+                                '<span class="carBlock">' +
+                                '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
+                                '<span class="carDrivertime">' + car.driver_time + '</span>' +
+                                '</span>' +
+                                '</li>'
+                            );
+                        }
+                        else if(car.blockName=='莒光'){
+                            $('.listView > ul').append(
+                            '<li class="carInf speed2">' +
+                                '<span class="carBlock">' +
+                                '<span class="carName car2">' + car.blockName + '</span>' +
+                                '</span>' +
+                                '<span class="carBlock">' +
+                                '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
+                                '<span class="carDrivertime">' + car.driver_time + '</span>' +
+                                '</span>' +
+                                '</li>'
+                            );
+                        }
+                        else if(car.blockName=='自強'){
+                            $('.listView > ul').append(
+                            '<li class="carInf speed3">' +
+                                '<span class="carBlock">' +
+                                '<span class="carName car3">' + car.blockName + '</span>' +
+                                '</span>' +
+                                '<span class="carBlock">' +
+                                '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
+                                '<span class="carDrivertime">' + car.driver_time + '</span>' +
+                                '</span>' +
+                                '</li>'
+                            );
+                        }
+                        else if(car.blockName=='普悠瑪'){
+                            $('.listView > ul').append(
+                            '<li class="carInf speed4">' +
+                                '<span class="carBlock">' +
+                                '<span class="carName car4">' + car.blockName + '</span>' +
+                                '</span>' +
+                                '<span class="carBlock">' +
+                                '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
+                                '<span class="carDrivertime">' + car.driver_time + '</span>' +
+                                '</span>' +
+                                '</li>'
+                            );
+                        }
+                        else if(car.blockName=='太魯閣'){
+                            $('.listView > ul').append(
+                            '<li class="carInf speed5">' +
+                                '<span class="carBlock">' +
+                                '<span class="carName car5">' + car.blockName + '</span>' +
+                                '</span>' +
+                                '<span class="carBlock">' +
+                                '<span class="carWay">' + car.start + '</span>' + '<span class="arrow"></span>' + '<span class="carWay">' + car.end + '</span>' +
+                                '<span class="carDrivertime">' + car.driver_time + '</span>' +
+                                '</span>' +
+                                '</li>'
+                            );
+                        }
                     }
                     $('.listView').slideToggle();
                 });

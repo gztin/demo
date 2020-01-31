@@ -239,11 +239,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #ea8e2f;
         border-radius: 5px;
         color: #fff;
         margin-left: 15%;
     }
+    .car1{background: #0067BC;}
+    .car2{background: #FF6700;}
+    .car3{background: #FF9E00;}
+    .car4{background: #AB1A23;}
+    .car5{background: #5BA47A;}
     .carBlock{
         display: flex;
         justify-content: center;
@@ -531,10 +535,8 @@
             border-left: 0px;
             border-right: 0px;
         }
-        .tripPlace{
-            display:flex;
-        }
-        .carWay{
+        
+        .carWay,.carDrivertime{
             display: flex;
             align-items: center;
         }
@@ -549,6 +551,10 @@
             justify-content: space-around;
             background: #000;
         }
+        .carInf > .carBlock:nth-child(2){
+            width:75%;
+            justify-content: space-around;
+        }
         .carName{
             width: 90px;
             height: 40px;
@@ -560,14 +566,19 @@
             color: #fff;
             margin-left: 15%;
         }
+        .car1{background: #0067BC;}
+        .car2{background: #FF6700;}
+        .car3{background: #FF9E00;}
+        .car4{background: #AB1A23;}
+        .car5{background: #5BA47A;}
         .carBlock{
             display: flex;
             justify-content: center;
         }
         .arrow,.tripContent span{
             background: url("../img/arrow.png")no-repeat;
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
             background-size: contain;
             
         }
@@ -595,10 +606,17 @@
         .tripInf > .tripContent:nth-last-child(1){
             justify-content: center!important;
         }
+        .tripPlace{
+            display: flex;
+        }
         .tripPlace:nth-child(1){
             position: absolute;
             left:10%;
             font-size:40px;
+        }
+        .carWay,.carDrivertime{
+            display: flex;
+            align-items: center;
         }
         p.tripStart,p.tripEnd {
             width: 100px;
@@ -843,10 +861,8 @@
             border-left: 0px;
             border-right: 0px;
         }
-        .tripPlace{
-            display:flex;
-        }
-        .carWay{
+
+        .carWay,.carDrivertime{
             display: flex;
             align-items: center;
         }
@@ -861,17 +877,22 @@
             justify-content: space-around;
             background: #000;
         }
+        
         .carName{
             width: 90px;
             height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #ea8e2f;
             border-radius: 5px;
             color: #fff;
             margin-left: 15%;
         }
+        .car1{background: #0067BC;}
+        .car2{background: #FF6700;}
+        .car3{background: #FF9E00;}
+        .car4{background: #AB1A23;}
+        .car5{background: #5BA47A;}
         .carBlock{
             display: flex;
             justify-content: center;
@@ -907,10 +928,17 @@
         .tripInf > .tripContent:nth-last-child(1){
             justify-content: center!important;
         }
+        .tripPlace{
+            display:flex;
+        }
         .tripPlace:nth-child(1){
             position: absolute;
             left:10%;
             font-size:40px;
+        }
+        .carWay,.carDrivertime{
+            display: flex;
+            align-items: center;
         }
         p.tripStart,p.tripEnd {
             width: 100px;
