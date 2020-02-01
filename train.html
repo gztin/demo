@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="waiting"><p>查詢中，請稍候</p></div>
     <div class="listView">
         <div class="tripInf">
             <div class="tripContent">
@@ -147,6 +148,7 @@
 
     // // JSON
     $('.sendMsg').click(function() {
+        $('.waiting').css('display','flex');
         var startStation = $('.start').val();
         var endStation = $('.end').val();
         var startTime = $('#startTime').val();
@@ -168,6 +170,7 @@
                     return res.json(); // 使用 text() 可以得到純文字 String
                 })
                 .then(result => {
+                    $('.waiting').slideUp();
                     console.log(result);
                     var dateObj = new Date();
                     var D = dateObj.getDate() < 10 ? '0' + dateObj.getDate() : dateObj.getDate();

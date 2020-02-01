@@ -987,6 +987,65 @@
         color:#000;
         background:#fff;
     }
+    .waiting{
+        background:rgba(0,0,0,0.7);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100vh;
+        display: none;
+    }
+    .waiting p{
+        width:70%;
+        height:130px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color:#fff;
+        font-size: 25px;
+        background: #46c4ff;
+        animation:waiting 3s infinite linear;
+        -moz-animation:waiting 3s infinite linear; /* Firefox */
+        -webkit-animation:waiting 3s infinite linear; /* Safari and Chrome */
+        -o-animation:waiting 3s infinite linear; /* Opera */
+    }
+    @keyframes waiting
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-moz-keyframes waiting /* Firefox */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-webkit-keyframes waiting /* Safari and Chrome */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-o-keyframes waiting /* Opera */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
     /* reset */
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
