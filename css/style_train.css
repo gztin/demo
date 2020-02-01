@@ -1013,6 +1013,7 @@
         height:100vh;
         display: none;
         position: absolute;
+        z-index:999;
     }
     .waiting p{
         width:70%;
