@@ -237,6 +237,9 @@ let data = {
         {clock:'22-00'},
         {clock:'23-00'},
         {clock:'24-00'}
+    ],
+    testData:[
+        {code:'<div class="checkView">123</div>'}
     ]
 }
 
