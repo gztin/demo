@@ -253,6 +253,11 @@ $('.close').click(function(){
     $('.listView ul').html("");
 });
 
+$('.tripContent span').click(function(){
+    var x =$(this).index()+1;
+    $('.tripContent span').eq(x).addClass('cur').siblings().removeClass('cur');
+});
+
 $('.infAll').click(function(){
     $('.listView ul li.carInf').css('display','flex');
 });
