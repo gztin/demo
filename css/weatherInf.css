@@ -5,9 +5,8 @@ html, body {
 #weather{
     width:100%;
     margin:0 auto;
-    padding-top:8%;
     margin-top: 5%;
-    height: 270px;
+    height: 370px;
     bottom: 0;
     position: fixed;
     background: #fff;
