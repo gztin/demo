@@ -9,7 +9,6 @@ html, body {
     bottom: 0;
     /* position: fixed; */ */
     position: absolute;
-    bottom:15px;
     background: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
