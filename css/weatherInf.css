@@ -17,7 +17,7 @@ html, body {
 .container{
     width:90%;
     margin:0 auto;
-    padding-top:10%;
+    padding-top:5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
