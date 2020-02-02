@@ -18,6 +18,7 @@ function loadData(){
         // 天氣描述
         // 溫度
         // 氣溫狀態
+        $('#place option[value=5]').attr('selected', 'selected');
         $('.tempContent').append('<p>'+data.location[0].weatherElement[0].time[0].parameter.parameterName+'</p>');
         $('.tempInf').append('<p>'+data.location[0].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>');
         $('.status').append('<p>'+data.location[0].weatherElement[3].time[0].parameter.parameterName+'</p>');
