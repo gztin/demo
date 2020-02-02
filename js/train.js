@@ -1,10 +1,10 @@
 let data = {
-    startStation:'台北',
+    startStation:'臺北',
     endStation:'高雄',
-    selectedStart: '台北',
+    selectedStart: '臺北',
     selectedEnd: '高雄',
     station:[
-        {stationNumber:'1000',stationName:'台北'},
+        {stationNumber:'1000',stationName:'臺北'},
         {stationNumber:'0990',stationName:'松山'},
         {stationNumber:'1010',stationName:'萬華'},
         {stationNumber:'1020',stationName:'板橋'},

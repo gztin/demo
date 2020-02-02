@@ -1,8 +1,12 @@
 // // JSON
 $('.sendMsg').click(function() {
     $('.waiting').css('display','flex');
-    var startStation = $('.start').val();
-    var endStation = $('.end').val();
+    // var startStation = $('.start').val();
+    var startStation = $('.start option:selected').text();
+    // var endStation = $('.end ').val();
+    var endStation = $('.end option:selected').text();
+    console.log(startStation);
+    console.log(endStation);
     var startTime = $('#startTime').val();
     var endTime = $('#endTime').val();
     var rideDate = $('#selectDay').find("p").text();
