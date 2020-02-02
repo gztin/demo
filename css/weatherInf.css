@@ -6,8 +6,8 @@ html, body {
     width:100%;
     margin:0 auto;
     height:260px;
-    bottom: 0;
-    position: fixed;
+    /* bottom: 0;
+    position: fixed; */
     background: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
