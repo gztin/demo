@@ -52,6 +52,7 @@ html, body {
 .location{
     width:60px;
     height:45px;
+    margin-left: 5%;
 }
 .tempInf,.tempContent,.status{
     margin:5px;
@@ -104,7 +105,7 @@ day3:下雨
     margin: 10px;
     border: 1px solid #000;
 }
-@media screen and (max-width:475px){
+@media screen and (max-width:480px){
     #weather{
         width:100%;
         margin:0 auto;
@@ -155,6 +156,7 @@ day3:下雨
     .location{
         width:60px;
         height:45px;
+        margin-left: 5%;
     }
     .tempInf,.tempContent,.status{
         margin:5px;
@@ -213,7 +215,7 @@ day3:下雨
     #weather{
         width:100%;
         margin:0 auto;
-        height:250px;
+        height:43%;
         bottom: 0;
         position: absolute;
         left: 0px;
@@ -260,6 +262,7 @@ day3:下雨
     .location{
         width:60px;
         height:30px;
+        margin-left: 5%;
     }
     .tempInf,.tempContent,.status{
         margin:5px;
