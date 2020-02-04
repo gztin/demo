@@ -65,7 +65,7 @@ html, body {
     font-size: 25px;
     display: flex;
     align-items: baseline;
-    border-right: 1px solid #c1c1c1;
+    border-right: 1px solid #172733;
     padding-right: 15px;
     color:#a75220;
 }
@@ -171,7 +171,7 @@ day3:下雨
         font-size: 25px;
         display: flex;
         align-items: baseline;
-        border-right: 1px solid #c1c1c1;
+        border-right: 1px solid #172733;
         padding-right: 15px;
         color:#a75220;
     }
@@ -276,7 +276,7 @@ day3:下雨
         font-size: 25px;
         display: flex;
         align-items: baseline;
-        border-right: 1px solid #c1c1c1;
+        border-right: 1px solid #172733;
         padding-right: 5px;
         color:#a75220;
     }
