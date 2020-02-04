@@ -8,6 +8,7 @@ html, body {
     height:290px;
     bottom: 0;
     position: absolute;
+    left: 0px;
     background: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
