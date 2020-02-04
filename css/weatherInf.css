@@ -74,12 +74,24 @@ html, body {
     font-size: 10px;
 }
 .weatherIcon{
-    width: 60px;
-    height: 60px;
-    margin: 5px;
-    background: url(../img/sunny_cloud.png)no-repeat;
+    
+}
+/*
+day1:多雲時晴
+day2:多雲
+day3:下雨
+*/
+.day1{background: url(../img/day1.png)no-repeat;}
+.day2{background: url(../img/day2.png)no-repeat;}
+.day3{background: url(../img/day3.png)no-repeat;}
+.day1,.day2,.day3{
+    width: 55px;
+    height: 55px;
+    margin: 2px;
+    display: block;
     background-size: contain;
 }
+
 .cUnit{
     font-size: 15px;
 }
@@ -165,12 +177,25 @@ html, body {
         font-size: 10px;
     }
     .weatherIcon{
-        width: 60px;
-        height: 60px;
-        margin: 5px;
-        background: url(../img/sunny_cloud.png)no-repeat;
+        
+    }
+    /*
+    day1:多雲時晴
+    day2:多雲
+    day3:下雨
+    */
+    .day1{background: url(../img/day1.png)no-repeat;}
+    .day2{background: url(../img/day2.png)no-repeat;}
+    .day3{background: url(../img/day3.png)no-repeat;}
+    
+    .day1,.day2,.day3{
+        width: 55px;
+        height: 55px;
+        margin: 2px;
+        display: block;
         background-size: contain;
     }
+    
     .cUnit{
         font-size: 15px;
     }
@@ -257,12 +282,26 @@ html, body {
         font-size: 10px;
     }
     .weatherIcon{
+        
+    }
+    /*
+    day1:多雲時晴
+    day2:多雲
+    day3:下雨
+    */
+    .day1{background: url(../img/day1.png)no-repeat;}
+    .day2{background: url(../img/day2.png)no-repeat;}
+    .day3{background: url(../img/day3.png)no-repeat;}
+    
+    .day1,.day2,.day3{
         width: 55px;
         height: 55px;
         margin: 2px;
-        background: url(../img/sunny_cloud.png)no-repeat;
+        display: block;
         background-size: contain;
     }
+    
+    
     .cUnit{
         font-size: 15px;
     }
