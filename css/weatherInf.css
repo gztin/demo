@@ -52,7 +52,7 @@ html, body {
 .location{
     width:60px;
     height:45px;
-    margin-left: 5%;
+    margin-right: 5%;
 }
 .tempInf,.tempContent,.status{
     margin:5px;
@@ -156,7 +156,7 @@ day3:下雨
     .location{
         width:60px;
         height:45px;
-        margin-left: 5%;
+        margin-right: 5%;
     }
     .tempInf,.tempContent,.status{
         margin:5px;
@@ -262,7 +262,7 @@ day3:下雨
     .location{
         width:60px;
         height:30px;
-        margin-left: 5%;
+        margin-right: 5%;
     }
     .tempInf,.tempContent,.status{
         margin:5px;
