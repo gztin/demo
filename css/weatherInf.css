@@ -67,6 +67,7 @@ html, body {
     align-items: baseline;
     border-right: 1px solid #c1c1c1;
     padding-right: 15px;
+    color:#a75220;
 }
 .tempInf > p:nth-child(1){
     font-size: 50px;
@@ -172,7 +173,7 @@ day3:下雨
         align-items: baseline;
         border-right: 1px solid #c1c1c1;
         padding-right: 15px;
-        color:#0f0909;
+        color:#a75220;
     }
     .tempInf > p:nth-child(1){
         font-size: 50px;
@@ -181,9 +182,7 @@ day3:下雨
         font-size: 10px;
         color:#0f0909;
     }
-    .weatherIcon{
-        
-    }
+    
     /*
     day1:多雲時晴
     day2:多雲
@@ -279,6 +278,7 @@ day3:下雨
         align-items: baseline;
         border-right: 1px solid #c1c1c1;
         padding-right: 5px;
+        color:#a75220;
     }
     .tempInf > p:nth-child(1){
         font-size: 50px;
