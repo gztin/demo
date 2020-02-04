@@ -9,7 +9,7 @@ html, body {
     bottom: 0;
     position: absolute;
     left: 0px;
-    background: #304f6b;
+    background: #D3D0CB;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-shadow: 1px 10px 30px #8ab5dc;
@@ -40,7 +40,7 @@ html, body {
 }
 .place{
     border:none;
-    background: #2b9fc9;
+    background: #172733;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
@@ -113,7 +113,7 @@ day3:下雨
         bottom: 0;
         position: absolute;
         left: 0px;
-        background: #304f6b;
+        background:#D3D0CB
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 10px 30px #8ab5dc;
@@ -144,7 +144,7 @@ day3:下雨
     }
     .place{
         border:none;
-        background: #2b9fc9;
+        background: #172733;
         padding: 3px;
         padding-left: 10px;
         padding-right: 10px;
@@ -164,7 +164,7 @@ day3:下雨
     }
     .tempContent{
         font-size: 20px;
-        color:#fff;
+        color:#0f0909;
     }
     .tempInf{
         font-size: 25px;
@@ -172,14 +172,14 @@ day3:下雨
         align-items: baseline;
         border-right: 1px solid #c1c1c1;
         padding-right: 15px;
-        color:#fff;
+        color:#0f0909;
     }
     .tempInf > p:nth-child(1){
         font-size: 50px;
     }
     .status{
         font-size: 10px;
-        color:#fff;
+        color:#0f0909;
     }
     .weatherIcon{
         
@@ -221,7 +221,7 @@ day3:下雨
         bottom: 0;
         position: absolute;
         left: 0px;
-        background: #304f6b;
+        background:#D3D0CB;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 10px 30px #8ab5dc;
@@ -252,7 +252,7 @@ day3:下雨
     }
     .place{
         border:none;
-        background: #2b9fc9;
+        background: #172733;
         padding: 3px;
         padding-left: 10px;
         padding-right: 10px;
