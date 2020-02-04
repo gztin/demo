@@ -265,15 +265,15 @@ $('.infAll').click(function(){
     $('.listView ul li.carInf').css('display','flex');
 });
 $('.infSpeed1').click(function(){
-    $('.listView ul li').siblings().hide();
+    $('.listView ul li').hide();
     $('.listView ul li.speed1').css('display','flex');
 });
 $('.infSpeed3').click(function(){
-    $('.listView ul li').siblings().hide();
+    $('.listView ul li').hide();
     $('.listView ul li.speed3').css('display','flex');
 });
 $('.infSpeed4').click(function(){
-    $('.listView ul li').siblings().hide();
+    $('.listView ul li').hide();
     $('.listView ul li.speed4').css('display','flex');
 });
 

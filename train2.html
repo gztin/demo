@@ -6,7 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    s
+<body onload="initialize()">
+    <style>
+        #map {
+          width: 700px;
+          height: 700px;
+        }
+
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+    <div id="map"></div>
+    
+    <script>
+        function initMap() {
+        //設定中心點座標
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: {lat: 22.630884, lng: 120.301065}
+        });
+        var url = 'https://ruienyuski.github.io/git_test/itaiwan.json';
+        function callAjax(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', url, true);
+            xhr.send(null);
+            xhr.onload = function() {}
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU1TGpRMS2lZZ0vbTPtAJapWcsLVnN2MU&callback=initMap" async
+    defer></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

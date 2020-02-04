@@ -182,7 +182,7 @@
             height: 50px;
             justify-content: center;
             align-items: center;
-            background: #424242;
+            background: #29333a;
             color: #fff;
             font-size: 23px;
         }
@@ -202,6 +202,7 @@
             justify-content: center;
             display: flex;
             width: 100%;
+            height: 10%;
             font-size: 24px;
         }
         .dayData:hover{
@@ -521,7 +522,7 @@
             height: 50px;
             justify-content: center;
             align-items: center;
-            background: #424242;
+            background: #29333a;
             color: #fff;
             font-size:1.4em;
         }
@@ -540,10 +541,14 @@
             justify-content: center;
             display: flex;
             width: 100%;
+            height: 10%;
             font-size: 30px;
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData:nth-child(even) {
+            background: #eaeaea;
         }
         .sendMsg{
             display: flex;
@@ -928,7 +933,7 @@
             height: 50px;
             justify-content: center;
             align-items: center;
-            background: #8f8f8f;
+            background: #29333a;
             color: #fff;
             font-size:1.4em;
         }
@@ -947,10 +952,14 @@
             justify-content: center;
             display: flex;
             width: 100%;
+            height: 10%;
             font-size: 1.3em;
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData:nth-child(even) {
+            background: #eaeaea;
         }
         .sendMsg{
             display: flex;
@@ -1075,7 +1084,7 @@
             justify-content: space-around;
         }
         .tripContent:nth-child(3) > span{
-            font-size: 18px;
+            font-size: 17px;
             border: 1px solid #fff;
             padding: 5px;
             padding-left: 13px;
@@ -1272,7 +1281,7 @@
             height: 50px;
             justify-content: center;
             align-items: center;
-            background: #8f8f8f;
+            background: #29333a;
             color: #fff;
             font-size:1.4em;
         }
@@ -1291,10 +1300,14 @@
             justify-content: center;
             display: flex;
             width: 100%;
+            height: 10%;
             font-size: 1.3em;
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData:nth-child(even) {
+            background: #eaeaea;
         }
         .sendMsg{
             display: flex;
@@ -1419,7 +1432,7 @@
             justify-content: space-around;
         }
         .tripContent:nth-child(3) > span{
-            font-size: 18px;
+            font-size: 14px;
             border: 1px solid #fff;
             padding: 5px;
             padding-left: 13px;
