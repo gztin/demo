@@ -839,7 +839,7 @@
             background: rgba(0,0,0,0.2);
         }
         .start,.end{
-            width: 114px;
+            width: 40%;
             height: 114px;
             border: 1px solid #fff;
             border-radius: 10px;
@@ -1183,7 +1183,7 @@
             background: rgba(0,0,0,0.2);
         }
         .start,.end{
-            width: 100px;
+            width: 40%;
             height: 100px;
             border: 1px solid #fff;
             border-radius: 10px;
