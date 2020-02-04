@@ -69,34 +69,26 @@
             </div>
             <a href="javascript:;" type="submit" id="sendMsg" class="sendMsg">查詢</a>
         </form>
-    </div>
-    <div id="weather">
-        <div class="container">
-            <div class="weatherInf">
-                <div class="tempInf"></div>
-                <div class="weatherIcon"></div>
-                <div class="weatherDetail">
-                    <div class="tempContent"></div>
-                    <div class="status"></div>
+        <div id="weather">
+            <div class="container">
+                <div class="weatherInf">
+                    <div class="tempInf"></div>
+                    <div class="weatherIcon"></div>
+                    <div class="weatherDetail">
+                        <div class="tempContent"></div>
+                        <div class="status"></div>
+                    </div>
+                </div>
+                <div class="location">
+                    <select id="place" class="place" onchange="changeLocation()"></select>
                 </div>
             </div>
-            <div class="location">
-                <select id="place" class="place" onchange="changeLocation()"></select>
+            <div class="ad">
+
             </div>
         </div>
-        <div class="ad">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle"
-                    style="display:block;width:100%;height:40px;"
-                    data-ad-format="fluid"
-                    data-ad-layout-key="-gw-3+1f-3d+2z"
-                    data-ad-client="ca-pub-8237624738906861"
-                    data-ad-slot="8709703616"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
     </div>
+    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
