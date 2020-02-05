@@ -100,8 +100,8 @@ day3:下雨
 /*  額外連結*/
     .linkArea{
         height: 100px;
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
         padding-top:3%;
         overflow-y:auto;
     }
@@ -131,6 +131,8 @@ day3:下雨
     background: url(../img/ad1.jpg)no-repeat center center; 
     background-size: cover;
     padding: 0%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 @media screen and (max-width:480px){
     #weather{
@@ -232,8 +234,8 @@ day3:下雨
     /*  額外連結*/
     .linkArea{
         height: 100px;
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
         padding-top:3%;
         overflow-y:auto;
     }
@@ -263,6 +265,8 @@ day3:下雨
          background: url(../img/ad1.jpg)no-repeat center center; 
         background-size: cover;
         padding: 0%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 }
 @media screen and (max-width:375px) and (max-height:600px){
@@ -367,8 +371,8 @@ day3:下雨
     /*  額外連結*/
     .linkArea{
         height: 100px;
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
         padding-top:3%;
         overflow-y:auto;
     }
@@ -398,5 +402,7 @@ day3:下雨
         background: url(../img/ad1.jpg)no-repeat center center; 
         background-size: cover;
         padding: 0%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 }
