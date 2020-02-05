@@ -102,6 +102,7 @@ day3:下雨
         height: 100px;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top:3%;
         overflow-y:auto;
     }
 /*  高鐵班次查詢*/
@@ -114,19 +115,22 @@ day3:下雨
         justify-content: center;
         color:#fff;
     }
+    .stock,.highSpeed{
+        font-size:24px;
+    }
     .highSpeed{
         margin-bottom: 2%;
-        background: #FC8712;
+        background: #16222c;
     }
     .stock{
-        background: #D15356;
+        background: #ce3337;
     }
 .ad{
     margin:10px;
     height: 65px;
     background: url(../img/ad1.jpg)no-repeat center center; 
-    background-size: contain;
-    padding: 3%;
+    background-size: cover;
+    padding: 0%;
 }
 @media screen and (max-width:480px){
     #weather{
@@ -230,6 +234,7 @@ day3:下雨
         height: 100px;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top:3%;
         overflow-y:auto;
     }
     /*  高鐵班次查詢*/
@@ -242,19 +247,22 @@ day3:下雨
         justify-content: center;
         color:#fff;
     }
+    .stock,.highSpeed{
+        font-size:24px;
+    }
     .highSpeed{
         margin-bottom: 2%;
-        background: #FC8712;
+        background: #16222c;
     }
     .stock{
-        background: #D15356;
+        background: #ce3337;
     }
     .ad{
         margin:10px;
         height: 65px;
          background: url(../img/ad1.jpg)no-repeat center center; 
-        background-size: contain;
-        padding: 3%;
+        background-size: cover;
+        padding: 0%;
     }
 }
 @media screen and (max-width:375px) and (max-height:600px){
@@ -361,6 +369,7 @@ day3:下雨
         height: 100px;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top:3%;
         overflow-y:auto;
     }
     /*  高鐵班次查詢*/
@@ -373,18 +382,21 @@ day3:下雨
         justify-content: center;
         color:#fff;
     }
+    .stock,.highSpeed{
+        font-size:24px;
+    }
     .highSpeed{
         margin-bottom: 2%;
-        background: #FC8712;
+        background: #16222c;
     }
     .stock{
-        background: #D15356;
+        background: #ce3337;
     }
     .ad{
         margin:10px;
         height: 50px;
         background: url(../img/ad1.jpg)no-repeat center center; 
-        background-size: contain;
-        padding: 3%;
+        background-size: cover;
+        padding: 0%;
     }
 }

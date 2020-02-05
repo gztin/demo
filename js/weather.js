@@ -24,7 +24,7 @@ function loadData(){
         if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '多雲時晴')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '晴時多雲')){
             $('.weatherIcon').append('<span class="day1"></span> ');
         }
-        else if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰時多雲')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '多雲')){
+        else if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰時多雲')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '多雲')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰天')){
             $('.weatherIcon').append('<span class="day2"></span> ');
         }
         else if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰短暫雨')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰時多雲短暫雨')){
