@@ -11,7 +11,7 @@
         height:100vh;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
-    
+   
     /* pc view */
     @media screen and (min-width:1024px){
         .hint{
