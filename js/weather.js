@@ -19,16 +19,25 @@ function loadData(){
         // 天氣描述
         // 溫度
         // 氣溫狀態
+        // day1 晴天
+        // day2 陰天
+        // day3 雨天
+        // day4 雷雨
+        // day5 雪
+        
         $('#place option[value=5]').attr('selected', 'selected');
         $('.tempContent').append('<p>'+data.location[5].weatherElement[0].time[0].parameter.parameterName+'</p>');
-        if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '多雲時晴')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '晴時多雲')){
+        if(data.location[5].weatherElement[0].time[0].parameter.parameterValue < 4){
             $('.weatherIcon').append('<span class="day1"></span> ');
         }
-        else if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰時多雲')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '多雲')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰天')){
+        else if((data.location[5].weatherElement[0].time[0].parameter.parameterValue >= 4)||(data.location[5].weatherElement[0].time[0].parameter.parameterValue <= 8)){
             $('.weatherIcon').append('<span class="day2"></span> ');
         }
-        else if((data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰短暫雨')||(data.location[5].weatherElement[0].time[0].parameter.parameterName == '陰時多雲短暫雨')){
+        else if((data.location[5].weatherElement[0].time[0].parameter.parameterValue > 8)||(data.location[5].weatherElement[0].time[0].parameter.parameterValue <= 14)){
             $('.weatherIcon').append('<span class="day3"></span> ');
+        }
+        else if((data.location[5].weatherElement[0].time[0].parameter.parameterValue > 15)||(data.location[5].weatherElement[0].time[0].parameter.parameterValue < 23)){
+            $('.weatherIcon').append('<span class="day4"></span> ');
         }
         $('.tempInf').append('<p>'+data.location[5].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>');
         $('.status').append('<p>'+data.location[5].weatherElement[3].time[0].parameter.parameterName+'</p>');
@@ -52,14 +61,17 @@ function changeLocation(){
         // 天氣描述
         // 溫度
         // 氣溫狀態
-        if((data.location[choice].weatherElement[0].time[0].parameter.parameterName == '多雲時晴')||(data.location[choice].weatherElement[0].time[0].parameter.parameterName == '晴時多雲')){
+        if(data.location[choice].weatherElement[0].time[0].parameter.parameterValue < 4){
             $('.weatherIcon').append('<span class="day1"></span> ');
         }
-        else if((data.location[choice].weatherElement[0].time[0].parameter.parameterName == '陰時多雲')||(data.location[choice].weatherElement[0].time[0].parameter.parameterName == '多雲')){
+        else if((data.location[choice].weatherElement[0].time[0].parameter.parameterValue >= 4)||(data.location[choice].weatherElement[0].time[0].parameter.parameterValue <= 8)){
             $('.weatherIcon').append('<span class="day2"></span> ');
         }
-        else if((data.location[choice].weatherElement[0].time[0].parameter.parameterName == '陰短暫雨')||(data.location[choice].weatherElement[0].time[0].parameter.parameterName == '陰時多雲短暫雨')){
+        else if((data.location[choice].weatherElement[0].time[0].parameter.parameterValue > 8)||(data.location[choice].weatherElement[0].time[0].parameter.parameterValue <= 14)){
             $('.weatherIcon').append('<span class="day3"></span> ');
+        }
+        else if((data.location[choice].weatherElement[0].time[0].parameter.parameterValue > 15)||(data.location[choice].weatherElement[0].time[0].parameter.parameterValue < 23)){
+            $('.weatherIcon').append('<span class="day4"></span> ');
         }
         
         $('.tempContent').append('<p>'+data.location[choice].weatherElement[0].time[0].parameter.parameterName+'</p>');
@@ -68,6 +80,6 @@ function changeLocation(){
     }).catch((err) => {
         console.log('錯誤:', err);
     });
-}
+}  
 // function change
 loadData();
