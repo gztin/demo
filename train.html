@@ -75,18 +75,16 @@
             <div class="container">
                 <div class="weatherInf">
                     <div class="tempInf"></div>
-                    <div class="chanceRain">
-                        <p>降雨機率</p>
-                    </div>
                     <div class="weatherIcon"></div>
-                    <div class="weatherDetail">
-                        <div class="tempContent"></div>
-                        <div class="status"></div>
+                    <div class="location">
+                        <select id="place" class="place" onchange="changeLocation()"></select>
+                        <div class="chanceRain"></div>
                     </div>
                 </div>
-                <div class="location">
-                    <select id="place" class="place" onchange="changeLocation()"></select>
-                </div>
+                <!-- <div class="weatherDetail">
+                    <div class="tempContent"></div>
+                    <div class="status"></div>
+                </div> -->
             </div>
             <div class="linkArea">
                 <div class="highSpeed"><a>高鐵班次查詢</a></div>
