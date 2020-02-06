@@ -57,18 +57,13 @@
                 </select>
             </div>
             <div class="timeInf">
-                <span>出發時間</span>
+                <span id="selectDay"><p></p><span></span></span>
                 <select id="startTime" name="startTime">
                     <option  v-for="option in timeRange" >{{option.clock}}</option>
                 </select>
-                <span>抵達時間</span>
-                <select id="endTime" name="endTime" >
-                    <option v-bind:value="option.clock" v-for="option in timeRange" >{{option.clock}}</option>
-                </select>
+                <p class="move">搭車</p>
             </div>
-            <div class="dayPick">
-                <p>乘車日期</p><span id="selectDay"><p></p><span></span></span>
-            </div>
+            
             <a href="javascript:;" type="submit" id="sendMsg" class="sendMsg">查詢</a>
         </form>
     </div>

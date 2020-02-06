@@ -27,7 +27,7 @@
             color:#fff;
             font-size: 2em;
         }
-        #app{display: none;}
+        #app,#weather{display: none;}
         
         /*預留ipad版型設定*/
         li.dayData:nth-child(even) {
@@ -56,7 +56,7 @@
             align-items: center;
             justify-content: space-around;
         }
-        .timeInf,.dayPick{
+        .timeInf{
             display: flex;
             justify-content: space-around;
             margin-top: 30px;
@@ -68,26 +68,26 @@
             cursor: pointer;
             background: rgba(0,0,0,0.3);
         }
-        .timeInf p,.dayPick p{
-            width: 50%;
-            height: 60px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-            color: #fff;
-            flex:1;
+        
+        #selectDay p {
+            font-size:20px;
         }
         #selectDay div{
-            margin-right:50%;
-            font-size: 1.8em;
-        }
-        .timeInf span{
-            color:#fff;
-            width: 100%;
-            font-size: 1.8em;
             display: flex;
-            justify-content: center;
+            flex:0.5;
+            font-size: 20px;
+        }
+        #selectDay div > span{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .timeInf > span:nth-child(1) > p{
+            flex:1;
+        }
+        .timeInf p{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
         }
         .start,.end{
             flex:1;
@@ -133,14 +133,12 @@
             -moz-transform:rotate(180deg); 
             -o-transform:rotate(180deg); 
         }
-        #startTime,#endTime{
-            width: 50%;
+        #startTime{
+            width: 100%;
             height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            padding:0 0 0 10%;
             background:transparent;
-            font-size: 1.8em;
+            font-size: 20px;
             color: #fff;
             border:none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
@@ -152,7 +150,6 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            flex:1;
         }
 
         /* 行事曆 */
@@ -360,7 +357,8 @@
             color:#fff;
             font-size: 2em;
         }
-        #app{display:none;}
+        #app,#weather{display:none;}
+        
         .searchInf{
             width: 90%;
             margin: 0 auto;
@@ -384,7 +382,7 @@
             align-items: center;
             justify-content: space-around;
         }
-        .timeInf,.dayPick{
+        .timeInf{
             display: flex;
             width: 100%;
             height: 80px;
@@ -396,33 +394,32 @@
             cursor: pointer;
             background: rgba(255, 255, 255, 0.3);
         }
-        .timeInf p,.dayPick p{
-            width: 50%;
-            height: 60px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-            color: #fff;
-        }
-        .timeInf p{
-            flex:1;
-        }
-        .dayPick p{
-            flex:0.5;
-        }
+        
+
         #selectDay p {
-            flex:1;
+            font-size:20px;
         }
         #selectDay div{
-            margin-right:50%;
-            font-size: 30px;
+            display: flex;
+            flex:0.5;
+            font-size: 20px;
         }
-        .timeInf span{
-            margin-left:5%;
-            width:100%;
-            color:#fff;
-            font-size:30px;
+        #selectDay div > span{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .timeInf > span:nth-child(1) > p{
+            flex:1;
+        }
+        .timeInf p{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
+        }
+        .move{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
         }
         .trainClass select {
             margin:0 auto;
@@ -473,15 +470,12 @@
             -moz-transform:rotate(180deg); 
             -o-transform:rotate(180deg); 
         }
-        #startTime,#endTime{
+        #startTime{
             width: 100%;
             height: 60px;
             background:transparent;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            font-size: 35px;
+            padding:0 0 0 10%;
+            font-size: 20px;
             color: #fff;
             border:none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
@@ -796,7 +790,7 @@
             align-items: center;
             justify-content: space-around;
         }
-        .timeInf,.dayPick{
+        .timeInf{
             display: flex;
             width: 100%;
             height: 60px;
@@ -808,34 +802,33 @@
             cursor: pointer;
             background: rgba(255, 255, 255, 0.3);
         }
-        .timeInf p,.dayPick p{
-            width: 50%;
-            height: 60px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-size: 18px;
-            color: #fff;
-        }
-        .timeInf p{
-            flex:1;
-        }
-        .dayPick p{
-            flex:0.5;
-        }
+        
+        
+        
         #selectDay p {
-            flex:1;
-            font-size:25px;
+            font-size:20px;
         }
         #selectDay div{
-            margin-right:10%;
-            font-size: 1.4em;
+            display: flex;
+            flex:0.5;
+            font-size: 20px;
         }
-        .timeInf span{
-            margin-left:5%;
-            width:100%;
-            color:#fff;
-            font-size:18px;
+        #selectDay div > span{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .timeInf > span:nth-child(1) > p{
+            flex:1;
+        }
+        .timeInf p{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
+        }
+        .move{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
         }
         .trainClass select {
             margin:0 auto;
@@ -884,12 +877,10 @@
             -moz-transform:rotate(180deg); 
             -o-transform:rotate(180deg); 
         }
-        #startTime,#endTime{
+        #startTime{
             width: 100%;
             height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            padding:0 0 0 10%;
             background:transparent;
             font-size: 20px;
             color: #fff;
@@ -903,7 +894,6 @@
             justify-content: space-around;
             align-items: center;
             color: #fff;
-            flex:1;
         }
     
         /* 搭乘日期 */
@@ -1144,7 +1134,7 @@
             align-items: center;
             justify-content: space-around;
         }
-        .timeInf,.dayPick{
+        .timeInf{
             display: flex;
             width: 100%;
             height: 40px;
@@ -1156,34 +1146,31 @@
             cursor: pointer;
             background: rgba(255, 255, 255, 0.3);
         }
-        .timeInf p,.dayPick p{
-            width: 50%;
-            height: 60px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-size: 15px;
-            color: #fff;
-        }
-        .timeInf p{
-            flex:1;
-        }
-        .dayPick p{
-            flex:0.5;
-        }
+        
         #selectDay p {
-            flex:1;
             font-size:20px;
         }
         #selectDay div{
-            margin-right:10%;
+            display: flex;
+            flex:0.5;
             font-size: 20px;
         }
-        .timeInf span{
-            margin-left:5%;
-            width:100%;
-            color:#fff;
-            font-size:14px;
+        #selectDay div > span{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .timeInf > span:nth-child(1) > p{
+            flex:1;
+        }
+        .timeInf p{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
+        }
+        .move{
+            width: 20%;
+            color: #fff;
+            font-size: 23px;
         }
         .trainClass select {
             margin:0 auto;
@@ -1232,12 +1219,10 @@
             -moz-transform:rotate(180deg); 
             -o-transform:rotate(180deg); 
         }
-        #startTime,#endTime{
+        #startTime{
             width: 100%;
             height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            padding:0 0 0 10%;
             background:transparent;
             font-size: 20px;
             color: #fff;
@@ -1251,7 +1236,6 @@
             justify-content: space-around;
             align-items: center;
             color: #fff;
-            flex:1;
         }
     
         /* 搭乘日期 */

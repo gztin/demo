@@ -164,7 +164,7 @@ day3:下雨
         bottom: 0;
         position: absolute;
         left: 0px;
-        background:#D3D0CB
+        background:#D3D0CB;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 10px 30px #8ab5dc;
