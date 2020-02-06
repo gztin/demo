@@ -39,6 +39,7 @@ function loadData(){
         else if((data.location[5].weatherElement[0].time[0].parameter.parameterValue > 15)||(data.location[5].weatherElement[0].time[0].parameter.parameterValue < 23)){
             $('.weatherIcon').append('<span class="day4"></span> ');
         }
+        $('.chanceRain').append('<p class="pop">'+data.location[5].weatherElement[1].time[0].parameter.parameterName+'%</p>');
         $('.tempInf').append('<p>'+data.location[5].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>');
         $('.status').append('<p>'+data.location[5].weatherElement[3].time[0].parameter.parameterName+'</p>');
     }).catch((err) => {
@@ -73,7 +74,7 @@ function changeLocation(){
         else if((data.location[choice].weatherElement[0].time[0].parameter.parameterValue > 15)||(data.location[choice].weatherElement[0].time[0].parameter.parameterValue < 23)){
             $('.weatherIcon').append('<span class="day4"></span> ');
         }
-        
+        $('.chanceRain').append('<p class="pop">'+data.location[choice].weatherElement[1].time[0].parameter.parameterName+'%</p>');
         $('.tempContent').append('<p>'+data.location[choice].weatherElement[0].time[0].parameter.parameterName+'</p>');
         $('.tempInf').append('<p>'+data.location[choice].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>');
         $('.status').append('<p>'+data.location[choice].weatherElement[3].time[0].parameter.parameterName+'</p>');
