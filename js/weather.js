@@ -40,7 +40,7 @@ function loadData(){
             $('.weatherIcon').append('<p>目前溫度</p>'+'<span class="day4"></span> ');
         }
         $('.chanceRain').append('<p>降雨機率</p>'+'<p class="pop">'+data.location[5].weatherElement[1].time[0].parameter.parameterName+'%</p>');
-        $('.tempInf').append('<p>目前溫度</p>'+'<div>'+'<p>'+data.location[5].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>'+'</div>');
+        $('.tempInf').append('<p>目前溫度</p>'+'<div>'+'<p>'+data.location[5].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<span class="cUnit">°C</span>'+'</div>');
         $('.tempContent').append('<p>'+data.location[5].weatherElement[0].time[0].parameter.parameterName+'</p>');
         $('.status').append('<p>'+data.location[5].weatherElement[3].time[0].parameter.parameterName+'</p>');
     }).catch((err) => {
@@ -77,7 +77,7 @@ function changeLocation(){
             $('.weatherIcon').append('<p>目前天氣</p>'+'<span class="day4"></span> ');
         }
         $('.chanceRain').append('<p>降雨機率</p>'+'<p class="pop">'+data.location[choice].weatherElement[1].time[0].parameter.parameterName+'%</p>');
-        $('.tempInf').append('<p>目前溫度</p>'+'<div>'+'<p>'+data.location[choice].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<p class="cUnit">°C</p>'+'</div>');
+        $('.tempInf').append('<p>目前溫度</p>'+'<div>'+'<p>'+data.location[choice].weatherElement[2].time[0].parameter.parameterName+'</p>'+'<span class="cUnit">°C</span>'+'</div>');
         $('.tempContent').append('<p>'+data.location[choice].weatherElement[0].time[0].parameter.parameterName+'</p>');
         $('.status').append('<p>'+data.location[choice].weatherElement[3].time[0].parameter.parameterName+'</p>');
     }).catch((err) => {

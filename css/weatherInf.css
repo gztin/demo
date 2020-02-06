@@ -68,15 +68,16 @@ html, body {
 }
 .tempInf{
     display: flex;
-    flex-direction: column;
     border-right: 1px solid #afafaf;
     padding-right: 5%;
     color:#2265a0;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-around;
     height:59px;
+    flex:1;
 }
-.tempInf > p:nth-child(1){
-    font-size: 15px;
+.tempInf > p{
+    width:10px;
 }
 .tempInf > div{
     display: flex;
@@ -219,15 +220,16 @@ day3:下雨
     }
     .tempInf{
         display: flex;
-        flex-direction: column;
         border-right: 1px solid #afafaf;
         padding-right: 5%;
         color:#2265a0;
-        align-items: baseline;
+        align-items: center;
+        justify-content: space-around;
         height:59px;
+        flex:1;
     }
-    .tempInf > p:nth-child(1){
-        font-size: 15px;
+    .tempInf > p{
+        width:10px;
     }
     .tempInf > div{
         display: flex;
@@ -241,7 +243,7 @@ day3:下雨
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 5px;
+        padding-top: 7%;
     }
     .chanceRain > p:nth-child(1){
         font-size:15px; 
@@ -381,15 +383,16 @@ day3:下雨
     }
     .tempInf{
         display: flex;
-        flex-direction: column;
         border-right: 1px solid #afafaf;
         padding-right: 5%;
         color:#2265a0;
-        align-items: baseline;
+        align-items: center;
+        justify-content: space-around;
         height:59px;
+        flex:1;
     }
-    .tempInf > p:nth-child(1){
-        font-size: 15px;
+    .tempInf > p{
+        width:10px;
     }
     .tempInf > div{
         display: flex;
