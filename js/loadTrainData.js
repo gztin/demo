@@ -150,6 +150,7 @@ $('.sendMsg').click(function() {
             );
             $('.listView').slideToggle();
         }
-        
+    }).catch((err) => {
+        console.log('訊息:請重新嘗試連線', err);
     });
 });
