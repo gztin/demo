@@ -127,26 +127,7 @@ day3:下雨
         margin-top:3%;
         overflow-y:auto;
     }
-/*  高鐵班次查詢*/
-    .stock,.highSpeed{
-        width:100%;
-        height: 70px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:#fff;
-    }
-    .stock,.highSpeed{
-        font-size:24px;
-    }
-    .highSpeed{
-        margin-bottom: 2%;
-        background: #16222c;
-    }
-    .stock{
-        background: #ce3337;
-    }
+
     .ad{
         margin:10px;
         height: 65px;
@@ -289,26 +270,7 @@ day3:下雨
         margin-top:3%;
         overflow-y:auto;
     }
-    /*  高鐵班次查詢*/
-    .stock,.highSpeed{
-        width:100%;
-        height: 70px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:#fff;
-    }
-    .stock,.highSpeed{
-        font-size:24px;
-    }
-    .highSpeed{
-        margin-bottom: 2%;
-        background: #16222c;
-    }
-    .stock{
-        background: #ce3337;
-    }
+    
     .ad{
         margin:10px;
         height: 65px;
@@ -445,26 +407,7 @@ day3:下雨
         margin-top:3%;
         overflow-y:auto;
     }
-    /*  高鐵班次查詢*/
-    .stock,.highSpeed{
-        width:100%;
-        height: 70px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:#fff;
-    }
-    .stock,.highSpeed{
-        font-size:24px;
-    }
-    .highSpeed{
-        margin-bottom: 2%;
-        background: #16222c;
-    }
-    .stock{
-        background: #ce3337;
-    }
+    
     .ad{
         margin:10px;
         height: 50px;

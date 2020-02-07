@@ -2,12 +2,12 @@
 /* CSS Document */
     body{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1b3547+0,0f0909+100 */
-        background: #1b3547; /* Old browsers */
-        background: -moz-linear-gradient(top,  #1b3547 0%, #0f0909 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #1b3547 0%,#0f0909 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #1b3547 0%,#0f0909 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3547', endColorstr='#0f0909',GradientType=0 ); /* IE6-9 */
-
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f98118+0,cc220c+100 */
+        background: #f98118; /* Old browsers */
+        background: -moz-linear-gradient(top, #ff6f07 0%, #7d0000 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ff6f07 0%,#7d0000 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ff6f07 0%,#7d0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f07', endColorstr='#7d0000',GradientType=0 ); /* IE6-9 */
         height:100vh;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
@@ -78,10 +78,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 1px solid #fff;
             border-radius: 10px;
             cursor: pointer;
-            background: rgba(255, 255, 255, 0.3);
+            background:#fff;
+            border: 1px solid #bd3603;
         }
         .timeInf > div{
             display: flex;
@@ -98,7 +98,7 @@
             margin-left: 19px;
         }
         .timeInf p{
-            color: #fff;
+            color: #000;
             font-size: 22px;
         }
         
@@ -106,29 +106,7 @@
             margin:0 auto;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
-            background: rgba(0,0,0,0.2);
-        }
-        /*  高鐵班次查詢*/
-        .stock,.gotoThsr{
-            width:100%;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
-            font-size:24px;
-        }
-        .gotoThsr{
-            margin-bottom: 2%;
-            background: #ea7836;
-        }
-        .gotoThsr a{
-            color:#fff;
-            text-decoration: none;
-        }
-        .stock{
-            background: #ce3337;
+            background: rgba(255, 255, 255, 0.5);
         }
         .start,.end{
             width: 165px;
@@ -142,12 +120,36 @@
             text-align:center;
             text-align-last:center;/*兼容chrome*/
             font-size: 3em;
-            color: #fff;
+            color: #000;
             background: #2b9fc9;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #start > option,#end > option{
             font-size: 25px;
+        }
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+        }
+        .gotoTrain a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .stock{
+            background: #ce3337;
         }
         .switch{
             background: url("../img/arrow.png")no-repeat center;
@@ -163,9 +165,6 @@
             -webkit-appearance:none;
         }
         
-        select > option{
-            background: #424242;
-        }
         
         .rotated { 
             transform:rotate(180deg); 
@@ -176,7 +175,7 @@
         #startTime{
             background: transparent;
             font-size: 22px;
-            color: #fff;
+            color: #000;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
@@ -261,7 +260,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 2em;
-            background: #ea7836;
+            background: #3a3a3a;
         }
     
         /* 列車資料 */
@@ -505,10 +504,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 1px solid #fff;
             border-radius: 10px;
             cursor: pointer;
-            background: rgba(255, 255, 255, 0.3);
+            background:#fff;
+            border: 1px solid #bd3603;
         }
         .timeInf > div{
             display: flex;
@@ -525,7 +524,7 @@
         }
         
         .timeInf p{
-            color: #fff;
+            color: #000;
             font-size: 22px;
         }
         
@@ -533,29 +532,7 @@
             margin:0 auto;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
-            background: rgba(0,0,0,0.2);
-        }
-        /*  高鐵班次查詢*/
-        .stock,.gotoThsr{
-            width:100%;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
-            font-size:24px;
-        }
-        .gotoThsr{
-            margin-bottom: 2%;
-            background: #ea7836;
-        }
-        .gotoThsr a{
-            color:#fff;
-            text-decoration: none;
-        }
-        .stock{
-            background: #ce3337;
+            background: rgba(255, 255, 255, 0.5);
         }
         .start,.end{
             width: 40%;
@@ -565,7 +542,7 @@
             align-items: center;
             padding:0 0 0 10%;
             font-size: 2em;
-            color: #fff;
+            color: #000;
             background: #2b9fc9;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
             line-height:100px;
@@ -573,6 +550,30 @@
         }
         #start > option,#end > option{
             font-size: 25px;
+        }
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+        }
+        .gotoTrain a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .stock{
+            background: #ce3337;
         }
         .switch{
             background: url("../img/arrow.png")no-repeat center center;
@@ -588,9 +589,7 @@
             -webkit-appearance:none;
         }
         
-        select > option{
-            background: #424242;
-        }
+        
         
         .rotated { 
             transform:rotate(180deg); 
@@ -601,7 +600,7 @@
         #startTime{
             background: transparent;
             font-size: 22px;
-            color: #fff;
+            color: #000;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
@@ -687,7 +686,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.5em;
-            background: #ea7836;
+            background: #3a3a3a;
         }
     
         /* 列車資料 */
@@ -788,7 +787,7 @@
         }
 
         .tripInf > .tripContent:nth-last-child(1){
-            justify-content: center!important;
+            justify-content: space-around;
         }
         .tripInf > .tripContent:nth-last-child(2){
             width:70%;
@@ -866,10 +865,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 1px solid #fff;
             border-radius: 10px;
             cursor: pointer;
-            background: rgba(255, 255, 255, 0.3);
+            background:#fff;
+            border: 1px solid #bd3603;
         }
         .timeInf > div{
             display: flex;
@@ -886,7 +885,7 @@
         }
         
         .timeInf p{
-            color: #fff;
+            color: #000;
             font-size: 22px;
         }
         
@@ -894,29 +893,7 @@
             margin:0 auto;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
-            background: rgba(0,0,0,0.2);
-        }
-        /*  高鐵班次查詢*/
-        .stock,.gotoThsr{
-            width:100%;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
-            font-size:24px;
-        }
-        .gotoThsr{
-            margin-bottom: 2%;
-            background: #ea7836;
-        }
-        .gotoThsr a{
-            color:#fff;
-            text-decoration: none;
-        }
-        .stock{
-            background: #ce3337;
+            background: rgba(255, 255, 255, 0.5);
         }
         .start,.end{
             width: 40%;
@@ -926,7 +903,7 @@
             align-items: center;
             padding:0 0 0 10%;
             font-size: 2em;
-            color: #fff;
+            color: #000;
             background: #2b9fc9;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
             line-height:100px;
@@ -934,6 +911,30 @@
         }
         #start > option,#end > option{
             font-size: 25px;
+        }
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+        }
+        .gotoTrain a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .stock{
+            background: #ce3337;
         }
         .switch{
             background: url("../img/arrow.png")no-repeat center center;
@@ -962,7 +963,7 @@
         #startTime{
             background: transparent;
             font-size: 22px;
-            color: #fff;
+            color: #000;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
@@ -1048,7 +1049,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.5em;
-            background: #ea7836;
+            background: #3a3a3a;
         }
     
         /* 列車資料 */
@@ -1225,10 +1226,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border: 1px solid #fff;
             border-radius: 10px;
             cursor: pointer;
-            background: rgba(255, 255, 255, 0.3);
+            background:#fff;
+            border: 1px solid #bd3603;
         }
         .timeInf > div{
             display: flex;
@@ -1245,7 +1246,7 @@
         }
         
         .timeInf p{
-            color: #fff;
+            color: #000;
             font-size: 22px;
         }
         
@@ -1253,29 +1254,7 @@
             margin:0 auto;
             text-align:center;
             text-align-last:center;/*兼容chrome*/
-            background: rgba(0,0,0,0.2);
-        }
-        /*  高鐵班次查詢*/
-        .stock,.gotoThsr{
-            width:100%;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
-            font-size:24px;
-        }
-        .gotoThsr{
-            margin-bottom: 2%;
-            background: #ea7836;
-        }
-        .gotoThsr a{
-            color:#fff;
-            text-decoration: none;
-        }
-        .stock{
-            background: #ce3337;
+            background: rgba(255, 255, 255, 0.5);
         }
         .start,.end{
             width: 40%;
@@ -1285,7 +1264,7 @@
             align-items: center;
             padding:0 0 0 10%;
             font-size: 2em;
-            color: #fff;
+            color: #000;
             background: #2b9fc9;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
             line-height:100px;
@@ -1293,6 +1272,30 @@
         }
         #start > option,#end > option{
             font-size: 25px;
+        }
+        /*  高鐵班次查詢 */
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+        }
+        .gotoTrain a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .stock{
+            background: #ce3337;
         }
         .switch{
             background: url("../img/arrow.png")no-repeat center center;
@@ -1307,11 +1310,30 @@
             -moz-appearance:none;
             -webkit-appearance:none;
         }
-        
-        select > option{
-            background: #424242;
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
         }
-        
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+        }
+        .gotoTrain a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .stock{
+            background: #ce3337;
+        }
         .rotated { 
             transform:rotate(180deg); 
             -webkit-transform:rotate(180deg); 
@@ -1321,7 +1343,7 @@
         #startTime{
             background: transparent;
             font-size: 22px;
-            color: #fff;
+            color: #000;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
@@ -1407,7 +1429,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 18px;
-            background: #ea7836;
+            background: #3a3a3a;
         }
     
         /* 列車資料 */

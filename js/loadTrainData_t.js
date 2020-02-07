@@ -16,7 +16,7 @@ $('.sendMsg').click(function() {
     }
     else{
         $('.waiting').css('display','flex');
-        const uri = "https://taiwan-train-api.herokuapp.com/train_api/" + startStation + "/" + endStation + "/" + rideDate + "/" + startTime + "/" + endTime;
+        const uri = "https://taiwan-train-api.herokuapp.com/train_api_t/" + startStation + "/" + endStation + "/" + rideDate + "/" + startTime + "/" + endTime;
         // const uri = "https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeByFrequency/Streaming/City/Hsinchu?$top=30&$format=JSON"
         fetch(uri, {
             method: 'GET'
@@ -27,7 +27,7 @@ $('.sendMsg').click(function() {
         .then(result => {
             
             $('.waiting').slideUp();
-            // console.log(result);
+            console.log(result);
             var dateObj = new Date();
             var D = dateObj.getDate() < 10 ? '0' + dateObj.getDate() : dateObj.getDate();
             var weekday = new Array(7);
@@ -41,7 +41,7 @@ $('.sendMsg').click(function() {
             var tripDay = weekday[dateObj.getDay()];
             var startStation = $('.start').find('option:selected').text();
             var endStation = $('.end').find('option:selected').text();
-            var tripDate = $('#selectDay').find("p").text();
+            var tripDate = $('#selectDay').find("p").eq(0).text();
             var tripTime = $('#startTime').find('option:selected').text();
             $('.tripStart').html(startStation);
             $('.tripEnd').html(endStation);
@@ -51,7 +51,7 @@ $('.sendMsg').click(function() {
     
             var dataList = result[0].complete_info.length;
             var count = 0;
-            
+            console.log(dataList);
             // 如果有撈到資料
             if(dataList > 0){
                 for (count = 0; count < dataList; count++) {
@@ -138,7 +138,7 @@ $('.sendMsg').click(function() {
                 var tripDay = weekday[dateObj.getDay()];
                 var startStation = $('.start').find('option:selected').text();
                 var endStation = $('.end').find('option:selected').text();
-                var tripDate = $('#selectDay').find("p").text();
+                var tripDate = $('#selectDay').find("p").eq(0).text();
                 var tripTime = $('#startTime').find('option:selected').text();
                 $('.tripStart').html(startStation);
                 $('.tripEnd').html(endStation);

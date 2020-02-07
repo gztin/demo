@@ -1,8 +1,4 @@
 let data = {
-    startStation:'臺北',
-    endStation:'高雄',
-    selectedStart: '臺北',
-    selectedEnd: '高雄',
     station:[
         {stationNumber:'1000',stationName:'臺北'},
         {stationNumber:'0990',stationName:'松山'},
@@ -247,9 +243,7 @@ let vm = new Vue({
     el:'#app',
     data:data
 });
-// $('.switch').click(function(){
-//     $('.switch').toggleClass('rotated');
-// });
+
 
 $('.close').click(function(){
     $('.listView').slideToggle();

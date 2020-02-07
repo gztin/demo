@@ -1,5 +1,5 @@
 // 設定預設終點車站資料
-$('#end option[value=4400]').attr('selected', 'selected');
+$('#end option[value=12]').attr('selected', 'selected');
 
 // 設定畫面上的出發日期
 var dateObj = new Date();
