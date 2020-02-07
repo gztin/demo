@@ -11,7 +11,7 @@
         height:100vh;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
-   
+    
     /* pc view */
     @media screen and (min-width:1024px){
         .hint{
@@ -28,319 +28,10 @@
             font-size: 2em;
         }
         #app,#weather{display: none;}
-        
-        /*預留ipad版型設定*/
-        li.dayData:nth-child(even) {
-            background: #eaeaea;
-        }
-        .searchInf{
-            width:70%;
-            margin:0 auto;
-            padding-top: 15%;
-            height:auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .plan{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            width:85%;
-            margin:0 auto;
-        }
-        .trainClass{
-            display:flex;
-            width: 100%;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .timeInf{
-            width: 100%;
-            height:75px;
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid #fff;
-            border-radius: 10px;
-            cursor: pointer;
-            background: rgba(255, 255, 255, 0.3);
-        }
-        .timeInf > div{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 35%;
-            padding-right: 3%;
-        }
-        #selectDay p {
-            font-size: 22px;
-            /* padding-left: 5%; */
-        }
-        
-        
-        .timeInf p{
-            color: #fff;
-            font-size: 22px;
-        }
-        .start,.end{
-            flex:1;
-            height:150px;
-            border:1px solid #fff;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align:center;
-            text-align-last:center;/*兼容chrome*/
-            font-size: 2em;
-            color:#fff;
-            background: #2b9fc9;
-            font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
-        }
-        #start > option,#end > option{
-            font-size: 25px;
-        }
-        .switch{
-            background: url("../img/arrow.png")no-repeat;
-            cursor: pointer;
-            width:50px;
-            height:50px;
-            margin:20px;
-            background-size: contain;
-        }
-
-        select{
-            appearance:none;
-            -moz-appearance:none;
-            -webkit-appearance:none;
-        }
-
-
-        select > option{
-            background: #424242;
-        }
-
-        .rotated { 
-            transform:rotate(180deg); 
-            -webkit-transform:rotate(180deg); 
-            -moz-transform:rotate(180deg); 
-            -o-transform:rotate(180deg); 
-        }
-        #startTime{
-            background: transparent;
-            font-size: 22px;
-            color: #fff;
-            border: none;
-            font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
-        }
-        #selectDay{
-            display: flex;
-            align-items: center;
-            color: #fff;
-            justify-content: flex-start;
-        }
-
-        /* 行事曆 */
-        .bg{
-            width:100%;
-            height:100vh;
-            background:rgba(0,0,0,0.7);
-            position: absolute;
-            z-index: 9;
-        }
-        .calender{
-            background: #fff;
-            width: 40%;
-            height: auto;
-            left: 30%;
-            margin-top:15%;
-            border-radius: 10px;
-            position: absolute;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            z-index: 999;
-            box-shadow: 1px 1px 13px #7d949c;
-        }
-        .calender > .title{
-            display: flex;
-            width: 100%;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            background: #29333a;
-            color: #fff;
-            font-size: 23px;
-        }
-        .calender > div{
-            width:100%;
-        }
-        .calender > div >ul{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            height: 450px;
-        }
-        .dayData{
-            cursor: pointer;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            width: 100%;
-            height: 10%;
-            font-size: 24px;
-        }
-        .dayData:hover{
-            background:#eaeaea;
-        }
-        li.dayData p:nth-child(2) {
-            margin-left: 10px;
-        }
-        li.dayData:nth-child(even) {
-            background: #eaeaea;
-        }
-        .sendMsg{
-            display: flex;
-            width: 100%;
-            margin-top: 15px;
-            border: 1px solid #fff;
-            border-radius: 10px;
-            cursor: pointer;
-            height: 60px;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5em;
-            background: #ea7836;
-        }
-
-        /* 列車資料 */
-        .listView{
-            display: none;
-            width:100%;
-            height: 100vh;
-            position: absolute;
-            background: linear-gradient(90deg, #292929 35%, #171717 60%);
-            background: -moz-linear-gradient(90deg, #292929 35%, #171717 60%);
-            background: -webkit-linear-gradient(90deg, #292929 35%, #171717 60%);
-            background: -o-linear-gradient(90deg, #292929 35%, #171717 60%);
-            z-index: 999;
-        }
-        .listView ul{
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            margin-top:140px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #fff;
-            border-top: 0px;
-            border-left: 0px;
-            border-right: 0px;
-        }
-        .carInf{
-            display: flex;
-            height: 90px;
-            width: 100%;
-            align-items: center;
-            border-bottom: 1px solid #d8d8d8;
-            color: #fff;
-            font-size: 1.2em;
-            justify-content: space-around;
-            background: #000;
-        }
-        .carName{
-            width: 90px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            color: #fff;
-            margin-left: 15%;
-        }
-        .car1{background: #0067BC;}
-        .car2{background: #FF6700;}
-        .car3{background: #FF9E00;}
-        .car4{background: #AB1A23;}
-        .car5{background: #5BA47A;}
-        .carBlock{
-            display: flex;
-            justify-content: center;
-        }
-        .arrow,.tripContent:nth-child(1) > span{
-            background: url("../img/arrow.png")no-repeat;
-            width: 30px;
-            height: 30px;
-            background-size: contain;
-        }
-        .tripInf{
-            width: 100%;
-            height: 100px;
-            position: fixed;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #353535;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        .tripInf > .tripContent:nth-last-child(1){
-            justify-content: center!important;
-        }
-        .tripContent:nth-child(3){
-            justify-content: space-around;
-        }
-        .tripContent:nth-child(3) > span{
-            font-size: 20px;
-        }
-        .tripPlace{
-            display:flex;
-        }
-        .tripPlace:nth-child(1){
-            position: absolute;
-            left:10%;
-            font-size:40px;
-        }
-        .tripContent:nth-child(2) p{
-            padding:10px;
-            font-size: 15px;
-        }
-        p.tripStart,p.tripEnd {
-            width: 100px;
-            font-size: 1.4em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .tripContent{
-            display: flex;
-            color: #fff;
-            width: 70%;
-            margin: 0 auto;
-            align-items: center;
-            height: 50px;
-            justify-content: space-around;
-            font-size: 1.4em;
-        }
-        .close{
-            font-size: 65px;
-            cursor: pointer;
-        }
-        .tripDate p,.tripTime p{
-            font-size: 20px;
-        }
     }
     
 
-    /* ipad*/
+    /* 預留 ipad 版型*/
     @media screen and (min-width:700px) and (max-width:1023px) {
         .hint{
             width:100%;
@@ -402,9 +93,10 @@
 
         #selectDay p {
             font-size: 22px;
-            /* padding-left: 5%; */
         }
-        
+        #selectDay > p:nth-child(2) {
+            margin-left: 19px;
+        }
         .timeInf p{
             color: #fff;
             font-size: 22px;
@@ -522,12 +214,15 @@
             height: 10%;
             font-size: 30px;
         }
+        .dayData > div{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
         .dayData:hover{
             background:#eaeaea;
         }
-        li.dayData p:nth-child(2) {
-            margin-left: 10px;
-        }
+        
         li.dayData:nth-child(even) {
             background: #eaeaea;
         }
@@ -751,6 +446,10 @@
     }
     
     @media screen and (max-width:500px) { 
+        .msg{
+            color:#fff;
+            font-size: 20px;
+        }
         .hint{
             display:none;
         }
@@ -798,9 +497,10 @@
         }
         #selectDay p {
             font-size: 22px;
-            /* padding-left: 5%; */
         }
-        
+        #selectDay > p:nth-child(2) {
+            margin-left: 19px;
+        }
         
         .timeInf p{
             color: #fff;
@@ -918,12 +618,15 @@
             height: 10%;
             font-size: 1.3em;
         }
+        .dayData > div{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
         .dayData:hover{
             background:#eaeaea;
         }
-        li.dayData p:nth-child(2) {
-            margin-left: 10px;
-        }
+        
         li.dayData:nth-child(even) {
             background: #eaeaea;
         }
@@ -1133,9 +836,10 @@
         }
         #selectDay p {
             font-size: 22px;
-            /* padding-left: 5%; */
         }
-        
+        #selectDay > p:nth-child(2) {
+            margin-left: 19px;
+        }
         
         .timeInf p{
             color: #fff;
@@ -1253,12 +957,15 @@
             height: 10%;
             font-size: 1.3em;
         }
+        .dayData > div{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
         .dayData:hover{
             background:#eaeaea;
         }
-        li.dayData p:nth-child(2) {
-            margin-left: 10px;
-        }
+        
         li.dayData:nth-child(even) {
             background: #eaeaea;
         }
@@ -1466,9 +1173,10 @@
         }
         #selectDay p {
             font-size: 22px;
-            /* padding-left: 5%; */
         }
-        
+        #selectDay > p:nth-child(2) {
+            margin-left: 19px;
+        }
         
         .timeInf p{
             color: #fff;
@@ -1586,12 +1294,15 @@
             height: 10%;
             font-size: 1.3em;
         }
+        .dayData > div{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
         .dayData:hover{
             background:#eaeaea;
         }
-        li.dayData p:nth-child(2) {
-            margin-left: 10px;
-        }
+        
         li.dayData:nth-child(even) {
             background: #eaeaea;
         }

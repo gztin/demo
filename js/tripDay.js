@@ -45,7 +45,7 @@ function dispTime() {
             var today = weekday[dd.getDay()];
             return today;
         }
-        $('.calender > div > ul').append('<li class="dayData">' + '<p>' + GetDateStr(i) + '</p>' + '<p>' + '週' + GetDayStr(i) + '</p>' + '</li>');
+        $('.calender > div > ul').append('<li class="dayData">'+'<div>' + '<p>' + GetDateStr(i) + '</p>' + '<p>' + '週' + GetDayStr(i) + '</p>' +'</div>'+ '</li>');
     }
 }
 // var timerID = setInterval("dispTime()",1000);
