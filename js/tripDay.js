@@ -18,7 +18,7 @@ weekday[4] = "四";
 weekday[5] = "五";
 weekday[6] = "六";
 var today = weekday[dateObj.getDay()];
-$('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<div>' + '(' + '<span>' + today + '</span>' + ')' + '</div>');
+$('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<p>' + '週' + today + '</p>');
 
 // 設定可購票日期
 function dispTime() {
@@ -45,14 +45,14 @@ function dispTime() {
             var today = weekday[dd.getDay()];
             return today;
         }
-        $('.calender > div > ul').append('<li class="dayData">' + '<p>' + GetDateStr(i) + '</p>' + '<div>' + '(' + '<span>' + GetDayStr(i) + '</span>' + ')' + '</div>' + '</li>');
+        $('.calender > div > ul').append('<li class="dayData">' + '<p>' + GetDateStr(i) + '</p>' + '<p>' + '週' + GetDayStr(i) + '</p>' + '</li>');
     }
 }
 // var timerID = setInterval("dispTime()",1000);
 dispTime();
 
 // 開啟出發日期的選擇畫面
-$('.dayPick').click(function() {
+$('#selectDay > p:nth-child(1)').click(function() {
     $('.bg').css('display', 'block');
     $('.calender').css('display', 'flex');
 });
@@ -66,9 +66,9 @@ $('.bg').click(function() {
 // 設定出發日期
 $('ul.list > li').click(function() {
     var index = $("ul.list > li").index(this);
-    var tempDate = $('.dayData').eq(index).find("p").text();
-    var tempDay = $('.dayData').eq(index).find("span").text();
-    $('#selectDay').find("p").html(tempDate);
+    var tempDate = $('.dayData').eq(index).find("p").eq(1).text();
+    var tempDay = $('.dayData').eq(index).find("p").eq(2).text();
+    $('.go').html(tempDate);
     $('#selectDay').find("span").html(tempDay);
     $('.bg').css('display', 'none');
     $('.calender').css('display', 'none');
