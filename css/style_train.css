@@ -76,14 +76,14 @@
             padding-right: 3%;
         }
         #selectDay p {
-            font-size: 24px;
-            padding-left: 5%;
+            font-size: 22px;
+            /* padding-left: 5%; */
         }
         
         
         .timeInf p{
             color: #fff;
-            font-size: 24px;
+            font-size: 22px;
         }
         .start,.end{
             flex:1;
@@ -130,16 +130,13 @@
             -o-transform:rotate(180deg); 
         }
         #startTime{
-            height: 60px;
             background: transparent;
-            font-size: 25px;
+            font-size: 22px;
             color: #fff;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #selectDay{
-            width:60%;
-            height:60px;
             display: flex;
             align-items: center;
             color: #fff;
@@ -199,6 +196,12 @@
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData p:nth-child(2) {
+            margin-left: 10px;
+        }
+        li.dayData:nth-child(even) {
+            background: #eaeaea;
         }
         .sendMsg{
             display: flex;
@@ -398,13 +401,13 @@
         }
 
         #selectDay p {
-            font-size: 24px;
-            padding-left: 5%;
+            font-size: 22px;
+            /* padding-left: 5%; */
         }
         
         .timeInf p{
             color: #fff;
-            font-size: 24px;
+            font-size: 22px;
         }
         
         .trainClass select {
@@ -457,16 +460,13 @@
             -o-transform:rotate(180deg); 
         }
         #startTime{
-            height: 60px;
             background: transparent;
-            font-size: 25px;
+            font-size: 22px;
             color: #fff;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #selectDay{
-            width:60%;
-            height:60px;
             display: flex;
             align-items: center;
             color: #fff;
@@ -524,6 +524,9 @@
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData p:nth-child(2) {
+            margin-left: 10px;
         }
         li.dayData:nth-child(even) {
             background: #eaeaea;
@@ -794,14 +797,14 @@
             padding-right: 3%;
         }
         #selectDay p {
-            font-size: 24px;
-            padding-left: 5%;
+            font-size: 22px;
+            /* padding-left: 5%; */
         }
         
         
         .timeInf p{
             color: #fff;
-            font-size: 24px;
+            font-size: 22px;
         }
         
         .trainClass select {
@@ -852,16 +855,13 @@
             -o-transform:rotate(180deg); 
         }
         #startTime{
-            height: 60px;
             background: transparent;
-            font-size: 25px;
+            font-size: 22px;
             color: #fff;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #selectDay{
-            width:60%;
-            height:60px;
             display: flex;
             align-items: center;
             color: #fff;
@@ -920,6 +920,9 @@
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData p:nth-child(2) {
+            margin-left: 10px;
         }
         li.dayData:nth-child(even) {
             background: #eaeaea;
@@ -1129,14 +1132,14 @@
             padding-right: 3%;
         }
         #selectDay p {
-            font-size: 24px;
-            padding-left: 5%;
+            font-size: 22px;
+            /* padding-left: 5%; */
         }
         
         
         .timeInf p{
             color: #fff;
-            font-size: 24px;
+            font-size: 22px;
         }
         
         .trainClass select {
@@ -1187,16 +1190,13 @@
             -o-transform:rotate(180deg); 
         }
         #startTime{
-            height: 60px;
             background: transparent;
-            font-size: 25px;
+            font-size: 22px;
             color: #fff;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #selectDay{
-            width:60%;
-            height:60px;
             display: flex;
             align-items: center;
             color: #fff;
@@ -1255,6 +1255,9 @@
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData p:nth-child(2) {
+            margin-left: 10px;
         }
         li.dayData:nth-child(even) {
             background: #eaeaea;
@@ -1462,14 +1465,14 @@
             padding-right: 3%;
         }
         #selectDay p {
-            font-size: 24px;
-            padding-left: 5%;
+            font-size: 22px;
+            /* padding-left: 5%; */
         }
         
         
         .timeInf p{
             color: #fff;
-            font-size: 24px;
+            font-size: 22px;
         }
         
         .trainClass select {
@@ -1520,16 +1523,13 @@
             -o-transform:rotate(180deg); 
         }
         #startTime{
-            height: 60px;
             background: transparent;
-            font-size: 25px;
+            font-size: 22px;
             color: #fff;
             border: none;
             font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
         }
         #selectDay{
-            width:60%;
-            height:60px;
             display: flex;
             align-items: center;
             color: #fff;
@@ -1588,6 +1588,9 @@
         }
         .dayData:hover{
             background:#eaeaea;
+        }
+        li.dayData p:nth-child(2) {
+            margin-left: 10px;
         }
         li.dayData:nth-child(even) {
             background: #eaeaea;
