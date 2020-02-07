@@ -143,7 +143,7 @@ $('.sendMsg').click(function() {
             $('.tripTime').html(tripTime + '出發');
 
             $('.listView > ul').append(
-                '<li class="carInf speed4">' +
+                '<li class="carInf speed1 speed2 speed3 speed4">' +
                 '<span class="msg">沒有班次</span>'+
                 '</span>' +
                 '</li>'
