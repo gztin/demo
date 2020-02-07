@@ -148,6 +148,7 @@
             display: flex;
             align-items: center;
             color: #fff;
+            justify-content: start;
         }
 
         /* 行事曆 */
@@ -480,6 +481,7 @@
             display: flex;
             align-items: center;
             color: #fff;
+            justify-content: start;
         }
         
         /* 搭乘日期 */
@@ -883,6 +885,7 @@
             display: flex;
             align-items: center;
             color: #fff;
+            justify-content: start;
         }
     
         /* 搭乘日期 */
@@ -1220,6 +1223,7 @@
             display: flex;
             align-items: center;
             color: #fff;
+            justify-content: start;
         }
     
         /* 搭乘日期 */
