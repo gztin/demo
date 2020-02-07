@@ -73,6 +73,7 @@
             align-items: center;
             justify-content: space-around;
             width: 35%;
+            padding-right: 3%;
         }
         #selectDay p {
             font-size: 28px;
@@ -397,6 +398,7 @@
             align-items: center;
             justify-content: space-around;
             width: 35%;
+            padding-right: 3%;
         }
 
         #selectDay p {
@@ -798,6 +800,7 @@
             align-items: center;
             justify-content: space-around;
             width: 35%;
+            padding-right: 3%;
         }
         #selectDay p {
             font-size: 25px;
@@ -1138,6 +1141,7 @@
             align-items: center;
             justify-content: space-around;
             width: 35%;
+            padding-right: 3%;
         }
         #selectDay p {
             font-size: 25px;
