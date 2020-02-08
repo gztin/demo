@@ -951,7 +951,8 @@
         }
         
         select > option{
-            background: #424242;
+            background: #fff;
+            color:#000;
         }
         
         .rotated { 

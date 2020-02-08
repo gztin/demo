@@ -25,28 +25,19 @@ $('.sendMsg').click(function() {
             return res.json(); // 使用 text() 可以得到純文字 String
         })
         .then(result => {
-            
             $('.waiting').slideUp();
             console.log(result);
-            var dateObj = new Date();
-            var D = dateObj.getDate() < 10 ? '0' + dateObj.getDate() : dateObj.getDate();
-            var weekday = new Array(7);
-            weekday[0] = "日";
-            weekday[1] = "一";
-            weekday[2] = "二";
-            weekday[3] = "三";
-            weekday[4] = "四";
-            weekday[5] = "五";
-            weekday[6] = "六";
-            var tripDay = weekday[dateObj.getDay()];
+            
+            var tripDay =  $('#selectDay').find("p").eq(1).text();
             var startStation = $('.start').find('option:selected').text();
             var endStation = $('.end').find('option:selected').text();
             var tripDate = $('#selectDay').find("p").eq(0).text();
             var tripTime = $('#startTime').find('option:selected').text();
+            console.log(tripDay);
             $('.tripStart').html(startStation);
             $('.tripEnd').html(endStation);
             $('.tripDate').html(tripDate);
-            $('.tripDay').html('週' + tripDay);
+            $('.tripDay').html(tripDay);
             $('.tripTime').html(tripTime + '出發');
     
             var dataList = result[0].complete_info.length;
@@ -125,17 +116,7 @@ $('.sendMsg').click(function() {
                 $('.listView').slideToggle();
             }
             else{
-                var dateObj = new Date();
-                var D = dateObj.getDate() < 10 ? '0' + dateObj.getDate() : dateObj.getDate();
-                var weekday = new Array(7);
-                weekday[0] = "日";
-                weekday[1] = "一";
-                weekday[2] = "二";
-                weekday[3] = "三";
-                weekday[4] = "四";
-                weekday[5] = "五";
-                weekday[6] = "六";
-                var tripDay = weekday[dateObj.getDay()];
+                var tripDay = $('#selectDay').find("p").eq(1).text();
                 var startStation = $('.start').find('option:selected').text();
                 var endStation = $('.end').find('option:selected').text();
                 var tripDate = $('#selectDay').find("p").eq(0).text();
@@ -143,7 +124,7 @@ $('.sendMsg').click(function() {
                 $('.tripStart').html(startStation);
                 $('.tripEnd').html(endStation);
                 $('.tripDate').html(tripDate);
-                $('.tripDay').html('週' + tripDay);
+                $('.tripDay').html(tripDay);
                 $('.tripTime').html(tripTime + '出發');
     
                 $('.listView > ul').append(

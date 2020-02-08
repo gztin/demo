@@ -67,8 +67,8 @@ $('ul.list > li').click(function() {
     var index = $("ul.list > li").index(this);
     var tempDate = $('.dayData').eq(index).find("p").eq(0).text();
     var tempWeekDay = $('.dayData').eq(index).find("p").eq(1).text();
-    console.log('日期是'+tempDate);
-    console.log('禮拜幾? '+tempWeekDay);
+    // console.log('日期是'+tempDate);
+    // console.log('禮拜幾? '+tempWeekDay);
     $('#selectDay').find("p").eq(0).html(tempDate);
     $('#selectDay').find("p").eq(1).html(tempWeekDay);
     $('.bg').css('display', 'none');

@@ -15,10 +15,6 @@ function loadData(){
             dataCount++;
         }
         
-        // 顯示溫度資訊
-        // 天氣描述
-        // 溫度
-        // 氣溫狀態
         // day1 晴天
         // day2 陰天
         // day3 雨天
