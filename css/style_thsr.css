@@ -3,11 +3,11 @@
     body{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1b3547+0,0f0909+100 */
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f98118+0,cc220c+100 */
-        background: #f98118; /* Old browsers */
-        background: -moz-linear-gradient(top, #ff6f07 0%, #7d0000 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #ff6f07 0%,#7d0000 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #ff6f07 0%,#7d0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f07', endColorstr='#7d0000',GradientType=0 ); /* IE6-9 */
+        background: #FF9966; /* Old browsers */
+        background: -moz-linear-gradient(top, #FF9966 0%, #FF5E62 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #FF9966 0%,#FF5E62 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #FF9966 0%,#FF5E62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9966', endColorstr='#FF5E62',GradientType=0 ); /* IE6-9 */
         height:100vh;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
