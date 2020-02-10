@@ -122,10 +122,10 @@
         .gotoThsr{
             margin-bottom: 2%;
             background: #ea7836;
+            text-decoration: none;
         }
         .gotoThsr span{
             color:#fff;
-            text-decoration: none;
         }
         .stock{
             background: #ce3337;
@@ -549,10 +549,10 @@
         .gotoThsr{
             margin-bottom: 2%;
             background: #ea7836;
-        }
-        gotoThsr span{
-            color:#fff;
             text-decoration: none;
+        }
+        .gotoThsr span{
+            color:#fff;
         }
         .stock{
             background: #ce3337;
@@ -910,10 +910,10 @@
         .gotoThsr{
             margin-bottom: 2%;
             background: #ea7836;
-        }
-        gotoThsr span{
-            color:#fff;
             text-decoration: none;
+        }
+        .gotoThsr span{
+            color:#fff;
         }
         .stock{
             background: #ce3337;
@@ -1269,10 +1269,10 @@
         .gotoThsr{
             margin-bottom: 2%;
             background: #ea7836;
-        }
-        gotoThsr span{
-            color:#fff;
             text-decoration: none;
+        }
+        .gotoThsr span{
+            color:#fff;
         }
         .stock{
             background: #ce3337;
