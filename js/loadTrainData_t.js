@@ -27,7 +27,6 @@ $('.sendMsg').click(function() {
         .then(result => {
             $('.waiting').slideUp();
             console.log(result);
-            
             var tripDay =  $('#selectDay').find("p").eq(1).text();
             var startStation = $('.start').find('option:selected').text();
             var endStation = $('.end').find('option:selected').text();

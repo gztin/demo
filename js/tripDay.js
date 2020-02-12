@@ -4,6 +4,7 @@ $('#end option[value=4400]').attr('selected', 'selected');
 // 設定畫面上的出發日期
 var dateObj = new Date();
 var D = dateObj.getDate();
+var H = dateObj.getHours();
 var Y = dateObj.getFullYear();
 var Mh = dateObj.getMonth() + 1;
 if (Mh > 12) Mh = 01;
@@ -18,10 +19,16 @@ weekday[5] = "五";
 weekday[6] = "六";
 var today = weekday[dateObj.getDay()];
 $('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<p>' + '週' + today + '</p>');
-
+var timeNow = H+'-00';
+$('#startTime :selected').text(H+'-00');
+while(H < 24){
+    $('#startTime').append('<option>'+H+'-00</option>');
+    H++;
+}
 // 設定可購票日期
 function dispTime() {
     for (i = 0; i < 9; i++) {
+        // 獲取今天日期
         function GetDateStr(i) {
             var dd = new Date();
             dd.setDate(dd.getDate() + i); //获取AddDayCount天后的日期
@@ -30,6 +37,7 @@ function dispTime() {
             var d = dd.getDate() < 10 ? "0" + dd.getDate() : dd.getDate(); //获取当前几号，不足10补0
             return y + "-" + m + "-" + d;
         }
+        // 獲取今天是星期幾
         function GetDayStr(i) {
             var dd = new Date();
             dd.setDate(dd.getDate() + i); //获取AddDayCount天后的日期

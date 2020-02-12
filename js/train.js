@@ -212,30 +212,6 @@ let data = {
         {stationNumber: '7140', stationName: '新馬'},
         {stationNumber: '7150', stationName: '冬山'},
         {stationNumber: '7160', stationName: '羅東'}
-    ],
-    timeRange:[
-        {clock:'06-00'},
-        {clock:'07-00'},
-        {clock:'08-00'},
-        {clock:'09-00'},
-        {clock:'10-00'},
-        {clock:'11-00'},
-        {clock:'12-00'},
-        {clock:'13-00'},
-        {clock:'14-00'},
-        {clock:'15-00'},
-        {clock:'16-00'},
-        {clock:'17-00'},
-        {clock:'18-00'},
-        {clock:'19-00'},
-        {clock:'20-00'},
-        {clock:'21-00'},
-        {clock:'22-00'},
-        {clock:'23-00'},
-        {clock:'24-00'}
-    ],
-    testData:[
-        {code:'<div class="checkView">123</div>'}
     ]
 }
 
@@ -271,24 +247,4 @@ $('.infSpeed4').click(function(){
     $('.listView ul li.speed4').css('display','flex');
 });
 
-// 手機定位
-var options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-  };
-  
-  function success(pos) {
-    var crd = pos.coords;
-  
-    console.log('Your current position is:');
-    console.log('Latitude : ' + crd.latitude);
-    console.log('Longitude: ' + crd.longitude);
-    console.log('More or less ' + crd.accuracy + ' meters.');
-  };
-  
-  function error(err) {
-    console.warn('ERROR(' + err.code + '): ' + err.message);
-  };
-  
-  navigator.geolocation.getCurrentPosition(success, error, options);
+

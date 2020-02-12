@@ -5,6 +5,7 @@ $('#end option[value=12]').attr('selected', 'selected');
 var dateObj = new Date();
 var D = dateObj.getDate();
 var Y = dateObj.getFullYear();
+var H = dateObj.getHours();
 var Mh = dateObj.getMonth() + 1;
 if (Mh > 12) Mh = 01;
 if (Mh < 10) Mh = '0' + Mh;
@@ -18,7 +19,10 @@ weekday[5] = "五";
 weekday[6] = "六";
 var today = weekday[dateObj.getDay()];
 $('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<p>' + '週' + today + '</p>');
-
+while(H < 24){
+    $('#startTime').append('<option>'+H+'-00</option>');
+    H++;
+}
 // 設定可購票日期
 function dispTime() {
     for (i = 0; i < 9; i++) {
