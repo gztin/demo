@@ -1,6 +1,5 @@
 // // JSON
 $('.sendMsg').click(function() {
-    
     // var startStation = $('.start').val();
     var startStation = $('.start option:selected').text();
     // var endStation = $('.end ').val();

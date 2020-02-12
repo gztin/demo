@@ -21,7 +21,7 @@ var today = weekday[dateObj.getDay()];
 $('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<p>' + '週' + today + '</p>');
 while(H < 24){
     $('#startTime').append('<option>'+H+'-00</option>');
-    H++;
+    H=H+1;
 }
 // 設定可購票日期
 function dispTime() {
@@ -68,13 +68,45 @@ $('.bg').click(function() {
 
 // 設定出發日期
 $('ul.list > li').click(function() {
-    var index = $("ul.list > li").index(this);
-    var tempDate = $('.dayData').eq(index).find("p").eq(0).text();
-    var tempWeekDay = $('.dayData').eq(index).find("p").eq(1).text();
-    console.log('日期是'+tempDate);
-    console.log('禮拜幾? '+tempWeekDay);
-    $('#selectDay').find("p").eq(0).html(tempDate);
-    $('#selectDay').find("p").eq(1).html(tempWeekDay);
-    $('.bg').css('display', 'none');
-    $('.calender').css('display', 'none');
+    if(x==0){
+        console.log(x);
+        var dateObj = new Date();
+        var H = dateObj.getHours();
+        $('#startTime').html('');
+        while(H < 24){
+            if(H<=9){
+                $('#startTime').append('<option>0'+H+'-00</option>');
+            }
+            else{
+                $('#startTime').append('<option>'+H+'-00</option>');
+            }
+            H=H+1;
+        }
+        $('.bg').css('display', 'none');
+        $('.calender').css('display', 'none');
+    }
+    else{
+        console.log(x);
+        var index = $("ul.list > li").index(this);
+        var tempDate = $('.dayData').eq(index).find("p").eq(0).text();
+        var tempWeekDay = $('.dayData').eq(index).find("p").eq(1).text();
+        // console.log('日期是'+tempDate);
+        // console.log('禮拜幾? '+tempWeekDay);
+        $('#selectDay').find("p").eq(0).html(tempDate);
+        $('#selectDay').find("p").eq(1).html(tempWeekDay);
+        $('.bg').css('display', 'none');
+        $('.calender').css('display', 'none');
+        // 如果選擇其他日期，則可以選擇從第一班發車的班次時間
+        $('#startTime').html('');
+        var newStar = 6;
+        while(newStar < 24){
+            if(newStar<=9){
+                $('#startTime').append('<option>0'+newStar+'-00</option>');
+            }
+            else{
+                $('#startTime').append('<option>'+newStar+'-00</option>');
+            }
+            newStar=newStar+1;
+        }
+    }
 });
