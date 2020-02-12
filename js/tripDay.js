@@ -22,7 +22,12 @@ $('#selectDay').html('<p>' + Y + '-' + Mh + '-' + D + '</p>' + '<p>' + '週' + t
 var timeNow = H+'-00';
 $('#startTime :selected').text(H+'-00');
 while(H < 24){
-    $('#startTime').append('<option>'+H+'-00</option>');
+    if(H<=9){
+        $('#startTime').append('<option>0'+H+'-00</option>');
+    }
+    else{
+        $('#startTime').append('<option>'+H+'-00</option>');
+    }
     H=H+1;
 }
 // 設定可購票日期
@@ -71,13 +76,16 @@ $('.bg').click(function() {
 });
 
 // 設定出發日期
+// 如果選擇其他日期，則可以選擇所有班次時間
 $('ul.list > li').click(function() {
+    $('.bg').css('display', 'none');
+    $('.calender').css('display', 'none');
+    $('#startTime').html('');
     var x =$(this).index();
     if(x==0){
         console.log(x);
         var dateObj = new Date();
         var H = dateObj.getHours();
-        $('#startTime').html('');
         while(H < 24){
             if(H<=9){
                 $('#startTime').append('<option>0'+H+'-00</option>'); 
@@ -87,8 +95,6 @@ $('ul.list > li').click(function() {
             }
             H=H+1;
         }
-        $('.bg').css('display', 'none');
-        $('.calender').css('display', 'none');
     }
     else{
         console.log(x);
@@ -99,10 +105,6 @@ $('ul.list > li').click(function() {
         // console.log('禮拜幾? '+tempWeekDay);
         $('#selectDay').find("p").eq(0).html(tempDate);
         $('#selectDay').find("p").eq(1).html(tempWeekDay);
-        $('.bg').css('display', 'none');
-        $('.calender').css('display', 'none');
-        // 如果選擇其他日期，則可以選擇從第一班發車的班次時間
-        $('#startTime').html('');
         var newStar = 6;
         while(newStar < 24){
             if(newStar <=9){

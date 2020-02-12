@@ -67,6 +67,7 @@ $('.bg').click(function() {
 });
 
 // 設定出發日期
+// 如果選擇其他日期，則可以選擇所有班次時間
 $('ul.list > li').click(function() {
     if(x==0){
         console.log(x);
@@ -96,7 +97,6 @@ $('ul.list > li').click(function() {
         $('#selectDay').find("p").eq(1).html(tempWeekDay);
         $('.bg').css('display', 'none');
         $('.calender').css('display', 'none');
-        // 如果選擇其他日期，則可以選擇從第一班發車的班次時間
         $('#startTime').html('');
         var newStar = 6;
         while(newStar < 24){
