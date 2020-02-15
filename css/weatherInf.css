@@ -76,7 +76,7 @@ html, body {
     color:#000;
     align-items: center;
     justify-content: space-around;
-    height:59px;
+    height:70px;
     flex:1;
 }
 .tempInf > p{
@@ -209,7 +209,7 @@ day3:下雨
         color:#000;
         align-items: center;
         justify-content: space-around;
-        height:59px;
+        height:70px;
         flex:1;
     }
     .tempInf > p{
@@ -353,7 +353,7 @@ day3:下雨
         color:#000;
         align-items: center;
         justify-content: space-around;
-        height:59px;
+        height:70px;
         flex:1;
     }
     .tempInf > p{
