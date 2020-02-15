@@ -73,7 +73,7 @@ html, body {
     display: flex;
     border-right: 1px solid #afafaf;
     padding-right: 5%;
-    color:#2265a0;
+    color:#000;
     align-items: center;
     justify-content: space-around;
     height:59px;
@@ -206,7 +206,7 @@ day3:下雨
         display: flex;
         border-right: 1px solid #afafaf;
         padding-right: 5%;
-        color:#2265a0;
+        color:#000;
         align-items: center;
         justify-content: space-around;
         height:59px;
@@ -350,7 +350,7 @@ day3:下雨
         display: flex;
         border-right: 1px solid #afafaf;
         padding-right: 5%;
-        color:#2265a0;
+        color:#000;
         align-items: center;
         justify-content: space-around;
         height:59px;
