@@ -227,7 +227,7 @@
             height: 70%;
             overflow-y: auto;
         }
-        .newsList > div{
+        .newsList > ul{
             overflow-y: auto;
             display: flex;
             flex-direction: column;
@@ -272,6 +272,7 @@
             height: 86%;
             margin-top: 27%;
             overflow-y: auto;
+            display: none;
         }
         /* end */
         

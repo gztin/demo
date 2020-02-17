@@ -1,9 +1,6 @@
 
 
-// 自動調整iframe高度
-function resize() {
-    parent.document.getElementById("mainframe").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
-}
+
 
 // 讀取新聞資料
 const uri = "https://taiwan-train-api.herokuapp.com/news/";
@@ -29,8 +26,8 @@ fetch(uri, {
     for (count = 0; count < dataList; count++) {
         var news = result[count];
         if(news.lable=='column'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsFocus">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsFocus">'+
                     '<p><span class="classTitle">焦點</span></p>'+
                     '<a href="'+
                     news.url+
@@ -40,12 +37,12 @@ fetch(uri, {
                     '<p><span class="onTime">'+
                     news.date+
                     '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='politics'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsPolitics">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsPolitics">'+
                 '<p><span class="classTitle">政治</span></p>'+
                 '<a href="'+
                 news.url+
@@ -53,14 +50,14 @@ fetch(uri, {
                 news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
-                result[count].date+
+                news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='entertainment'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsEntertainment">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsEntertainment">'+
                 '<p><span class="classTitle">娛樂</span></p>'+
                 '<a href="'+
                 news.url+
@@ -70,12 +67,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='politics'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsPolitics>'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsPolitics>'+
                 '<p><span class="classTitle">政治</span></p>'+
                 '<a href="'+
                 news.url+
@@ -85,12 +82,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='finance'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsFinance">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsFinance">'+
                 '<p><span class="classTitle">金融</span></p>'+
                 '<a href="'+
                 news.url+
@@ -100,12 +97,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='society'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsSociety">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsSociety">'+
                 '<p><span class="classTitle">社會</span></p>'+
                 '<a href="'+
                 news.url+
@@ -115,12 +112,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='global'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsGlobal">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsGlobal">'+
                 '<p><span class="classTitle">國際</span></p>'+
                 '<a href="'+
                 news.url+
@@ -130,12 +127,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='sport'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsSport">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsSport">'+
                 '<p><span class="classTitle">體育</span></p>'+
                 '<a href="'+
                 news.url+
@@ -145,12 +142,12 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
         else if(news.lable=='gossiping'){
-            $('.newsList > div').append(
-                '<div class="newsContent newsGossiping">'+
+            $('.newsList > ul').append(
+                '<li class="newsContent newsGossiping">'+
                 '<p><span class="classTitle">八卦</span></p>'+
                 '<a href="'+
                 news.url+
@@ -160,12 +157,10 @@ fetch(uri, {
                 '<p><span class="onTime">'+
                 news.date+
                 '</span><span class="newslink"></span></p>'+
-                '</div>'
+                '</li>'
             );
         }
     }
-
-
 }).catch((err) => {
     console.log('訊息:請重新嘗試連線', err);
 });

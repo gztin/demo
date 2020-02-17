@@ -6,79 +6,90 @@ $('.menu span').click(function(){
 });
 
 $('.all').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').css('display','flex');
 });
 
 $('.focus').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsFocus').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsFocus').css('display','flex');
 });
 
 $('.politics').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsPolitics').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsPolitics').css('display','flex');
 });
 
 $('.gossiping').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsGossiping').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsGossiping').css('display','flex');
 });
 
 $('.entertainment').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsEntertainment').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsEntertainment').css('display','flex');
 });
 
 $('.gossiping').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsGossiping').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsGossiping').css('display','flex');
 });
 
 $('.global').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsGlobal').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsGlobal').css('display','flex');
 });
 
 $('.finance').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsFinance').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsFinance').css('display','flex');
 });
 
 $('.society').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsSociety').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsSociety').css('display','flex');
 });
 
 $('.sport').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsSport').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsSport').css('display','flex');
 });
 
 $('.sport').click(function(){
-  $('.pop').hide();
-  $('.newsList div > div').hide();
-  $('.newsList div > div.newsSport').css('display','flex');
+  $('.popView').hide();
+  $('.newsList ul > li').hide();
+  $('.newsList ul > li.newsSport').css('display','flex');
 });
 
 
 // 跳頁
-$('.newsList > div > .newsContent').click(function(){
+$('#bbb').on('click','li',function(){
   var y =$(this).index();
-  console.log(y);
-  alert("aaa");
+  // console.log(y);
+  // alert(y);
+  var geturl = $('.newsContent > a').attr('href');
+  console.log(geturl);
+  $('#popView').;
+  $('.popView').css('display','flex');
 });
 
 // 複製連結
-$('.newslink').click(function(){
-   alert("aaa");
-});
+// $('#bbb').on('click','span.newslink',function(){
+//   //  alert("aaa");
+//   function copyUrl2(){
+//     var urlaaa = $('.newsContent > a').attr('href');
+//     urlaaa.select(); 
+//     document.execCommand("Copy");
+//     alert("OK。");
+//   }
+//   copyUrl2();
+// });
