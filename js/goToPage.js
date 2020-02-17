@@ -33,14 +33,12 @@ $('.gossiping').click(function(){
 
 $('.entertainment').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsEntertainment').css('display','flex');
 });
 
 $('.gossiping').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsGossiping').css('display','flex');
 });
@@ -53,7 +51,6 @@ $('.global').click(function(){
 
 $('.finance').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsFinance').css('display','flex');
 });
@@ -67,14 +64,12 @@ $('.society').click(function(){
 
 $('.sport').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsSport').css('display','flex');
 });
 
 $('.sport').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsSport').css('display','flex');
 });
