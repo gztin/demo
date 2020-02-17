@@ -7,20 +7,18 @@ $('.menu span').click(function(){
 
 $('.all').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').css('display','flex');
 });
 
 $('.focus').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
+  
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsFocus').css('display','flex');
 });
 
 $('.politics').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsPolitics').css('display','flex');
 });
@@ -57,7 +55,6 @@ $('.finance').click(function(){
 
 $('.society').click(function(){
   $('.popView').hide();
-  $('.popView > iframe').css('margin-top','-185px');
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsSociety').css('display','flex');
 });
