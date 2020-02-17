@@ -145,7 +145,7 @@ day3:下雨
         width:100%;
         margin:0 auto;
         height:43%;
-        bottom: 0;
+        bottom: -186px;
         position: absolute;
         left: 0px;
         background:#D3D0CB;
