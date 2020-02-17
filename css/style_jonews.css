@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+    body{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1b3547+0,0f0909+100 */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f98118+0,cc220c+100 */
+        background: #FF9966; /* Old browsers */
+        background: -moz-linear-gradient(top, #FF9966 0%, #FF5E62 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #FF9966 0%,#FF5E62 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #FF9966 0%,#FF5E62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9966', endColorstr='#FF5E62',GradientType=0 ); /* IE6-9 */
+        height:100vh;
+        font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
+    }
+    
+    /* pc view */
+    @media screen and (min-width:1024px){
+        .hint{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 201, 102);
+            z-index: 99999;
+        }
+        .hint p{
+            color:#000;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #news,#weather{display: none;}
+    }
+
+    /* 預留 ipad 版型*/
+    @media screen and (min-width:700px) and (max-width:1023px) {
+        .hint{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 201, 102);
+            z-index: 99999;
+        }
+        .hint p{
+            color:#000;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #news,#weather{display:none;}
+        
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+            text-decoration: none;
+        }
+        .gotoTrain span{
+            color:#fff;
+        }
+        .stock{
+            background: #ce3337;
+        }
+        
+        /* 搭乘日期 */
+        .bg{
+            width:100%;
+            height:100vh;
+            background:rgba(0,0,0,0.7);
+            position: absolute;
+            z-index: 9;
+        }
+        
+    }
+    .checkView{
+        width:300px;
+        height:300px;
+        color:#000;
+        background: #c60;
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .waiting{
+        background:rgba(0,0,0,0.7);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100vh;
+        display: none;
+        position: absolute;
+        z-index:999;
+    }
+    .waiting p{
+        width:70%;
+        height:130px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+        border-radius: 10px;
+        color:#fff;
+        font-size: 25px;
+        background: #46c4ff;
+        animation:waiting 3s infinite linear;
+        -moz-animation:waiting 3s infinite linear; /* Firefox */
+        -webkit-animation:waiting 3s infinite linear; /* Safari and Chrome */
+        -o-animation:waiting 3s infinite linear; /* Opera */
+    }
+    @keyframes waiting
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-moz-keyframes waiting /* Firefox */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-webkit-keyframes waiting /* Safari and Chrome */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+
+    @-o-keyframes waiting /* Opera */
+    {
+        0% {margin-top:-80px;}
+        25% {margin-top:-40px;}
+        50% {margin-top:0px;}
+        75% {margin-top:-40px;}
+        100% {margin-top:-80px;}
+    }
+    
+    @media screen and (max-width:500px) { 
+        .msg{
+            color:#fff;
+            font-size: 20px;
+        }
+        .hint{
+            display:none;
+        }
+        /* 新聞橫向區塊 */
+        .news{
+            margin: 0 auto;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .area-title{
+            width:100%;
+            height:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 224, 141);
+        }
+        .navbar{
+            height:50px;
+            width:100%;
+            overflow-y: auto;
+        }
+        .menu{
+            display: flex;
+            background: #fff;
+            align-items: center;
+            justify-content: space-around;
+            width: 720px;
+            height: 50px;
+        }
+        .menu span{
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 5px;
+        }
+        .cur{
+            background: #000;
+            color: #fff;
+        }
+
+        /* 新聞列表 */
+        .newsContent{
+            width:95%;
+            height:90px;
+            margin-top: 2%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .newsContent a{
+            text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 320px;
+            margin-left: 3%;
+        }
+        .newsContent > p{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .newsList{
+            height: 70%;
+            overflow-y: auto;
+        }
+        .newsList > div{
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .classTitle  {
+            background: #000;
+            color: #fff;
+            padding: 1%;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-left: 3%;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        span.onTime {
+            font-size: 12px;
+            margin-left: 3%;
+        }
+        span.newslink {
+            width: 25px;
+            height: 25px;
+            margin-right: 2%;
+            background-size: contain;
+            background: url("../img/share.png")no-repeat center center;
+        }
+        /* end */
+        
+        /*底部資訊*/
+        .gotoThsr span{
+            color:#fff;
+        }
+        .gotoThsr,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+            font-size:24px;
+        }
+        .gotoThsr{
+            margin-bottom: 2%;
+            background: #ea7836;
+            text-decoration: none;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+            text-decoration: none;
+        }
+        .gotoTrain span{
+            color:#fff;
+        }
+        /* end */
+    }
+
+    /* iphone6/7/8plus */
+    @media screen and (max-width:414px) and (max-height:750px){
+        .hint{
+            display:none;
+        }
+        
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+            text-decoration: none;
+        }
+        .gotoTrain span{
+            color:#fff;
+        }
+        .stock{
+            background: #ce3337;
+        }
+        
+    }
+
+    /*    iphone5*/
+    @media screen and (max-width:375px) and (max-height:600px){
+        .hint{display: none;}
+        
+        /*  高鐵班次查詢 */
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+            text-decoration: none;
+        }
+        .gotoTrain span{
+            color:#fff;
+        }
+        .stock{
+            background: #ce3337;
+        }
+        
+        /*  高鐵班次查詢*/
+        .stock,.gotoTrain{
+            width:100%;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+        }
+        .stock,.gotoTrain{
+            font-size:24px;
+        }
+        .gotoTrain{
+            margin-bottom: 2%;
+            background: #16222c;
+            text-decoration: none;
+        }
+        .gotoTrain span{
+            color:#fff;
+        }
+        .stock{
+            background: #ce3337;
+        }
+        .rotated { 
+            transform:rotate(180deg); 
+            -webkit-transform:rotate(180deg); 
+            -moz-transform:rotate(180deg); 
+            -o-transform:rotate(180deg); 
+        }
+    }
+    
+    /* reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    textarea:focus, input:focus,option:focus{
+        outline: none;
+    }
+    *:focus {
+        outline: none;
+    }
+    option:focus{
+        background-color:#FFF;
+        outline:none;
+        border:none;
+        box-shadow:none;
+    }

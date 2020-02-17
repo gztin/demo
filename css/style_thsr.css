@@ -20,12 +20,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #AF080B;
+            background: rgb(255, 201, 102);
             z-index: 99999;
         }
         .hint p{
-            color:#fff;
+            color:#000;
             font-size: 2em;
+            font-weight: bold;
         }
         #app,#weather{display: none;}
     }
@@ -39,12 +40,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #AF080B;
+            background: rgb(255, 201, 102);
             z-index: 99999;
         }
         .hint p{
-            color:#fff;
+            color:#000;
             font-size: 2em;
+            font-weight: bold;
         }
         #app,#weather{display:none;}
         
@@ -1332,6 +1334,7 @@
         .gotoTrain span{
             color:#fff;
         }
+        
         .stock{
             background: #ce3337;
         }
