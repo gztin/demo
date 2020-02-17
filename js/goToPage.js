@@ -86,14 +86,7 @@ $('#newsGroup').on('click','li',function(){
   var geturl = $('#newsGroup > li').eq(y).find('a').attr("href");
   console.log(geturl);
   document.getElementById("popView").src = geturl;
-  var gross = $('#newsGroup > li.newsGossiping ').eq(y).find("span").text();
-  if(gross == '八卦'){
-    $('.popView > iframe').css('margin-top','0px');
-    $('.popView').css('display','flex');
-  }
-  else{
-    $('.popView').css('display','flex');
-  }
+  $('.popView').css('display','flex');
   
 });
 

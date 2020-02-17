@@ -146,12 +146,13 @@ day3:下雨
         margin:0 auto;
         height:43%;
         bottom: -186px;
-        position: absolute;
+        position: fixed;
         left: 0px;
         background:#D3D0CB;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 10px 30px #8ab5dc;
+        z-index:999;
     }
 
     .container{
