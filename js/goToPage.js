@@ -83,7 +83,7 @@ $('.sport').click(function(){
 // 跳頁
 $('#newsGroup').on('click','li',function(){
   var y =$(this).index();
-  var geturl = $('#newsGroup > li').eq(y).find("a").attr('href');
+  var geturl = $('#newsGroup > li').eq(y).find('a').attr("href");
   console.log(geturl);
   document.getElementById("popView").src = geturl;
   var gross = $('#newsGroup > li.newsGossiping ').eq(y).find("span").text();
