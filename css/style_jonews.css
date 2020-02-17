@@ -1,13 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
     body{
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1b3547+0,0f0909+100 */
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f98118+0,cc220c+100 */
-        background: #FF9966; /* Old browsers */
-        background: -moz-linear-gradient(top, #FF9966 0%, #FF5E62 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #FF9966 0%,#FF5E62 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #FF9966 0%,#FF5E62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9966', endColorstr='#FF5E62',GradientType=0 ); /* IE6-9 */
+        background: #393434;
         height:100vh;
         font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
@@ -184,6 +178,8 @@
             height:50px;
             width:100%;
             overflow-y: auto;
+            box-shadow: 0px 1px 1px #d0d0d0;
+            z-index: 9;
         }
         .menu{
             display: flex;
@@ -249,6 +245,15 @@
             font-size: 14px;
             border-radius: 5px;
         }
+        .newsPolitics > p > span.classTitle{background:#363636;}
+        .newsSport > p > span.classTitle {background:#e26500;}
+        .newsGossiping > p > span.classTitle{background:#215a5a;}
+        .newsEntertainment > p > span.classTitle{background:#5909a3;}
+        .newsGlobal > p > span.classTitle {background:#3f669e;}
+        .newsFinance > p > span.classTitle{background:#d29120;}
+        .newsSociety > p > span.classTitle{background:#4e9440;}
+        .newsFocus > p > span.classTitle{background:#c34b4b;}
+
         span.onTime {
             font-size: 12px;
             margin-left: 3%;
@@ -257,8 +262,16 @@
             width: 25px;
             height: 25px;
             margin-right: 2%;
+            background: url("../img/share1.png")no-repeat center center;
             background-size: contain;
-            background: url("../img/share.png")no-repeat center center;
+        }
+        .popView{
+            z-index: 99999;
+            position: absolute;
+            width: 100%;
+            height: 86%;
+            margin-top: 27%;
+            overflow-y: auto;
         }
         /* end */
         

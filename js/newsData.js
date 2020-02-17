@@ -1,64 +1,9 @@
 
-// 切換項目
 
-$('.menu span').click(function(){
-    var x =$(this).index();
-    $('.menu span').eq(x).addClass('cur').siblings().removeClass('cur');
-});
-
-$('.all').click(function(){
-    $('.newsList div > div').css('display','flex');
-});
-
-$('.focus').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsFocus').css('display','flex');
-});
-
-$('.politics').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsPolitics').css('display','flex');
-});
-
-$('.gossiping').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsGossiping').css('display','flex');
-});
-
-$('.entertainment').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsEntertainment').css('display','flex');
-});
-
-$('.gossiping').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsGossiping').css('display','flex');
-});
-
-$('.global').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsGlobal').css('display','flex');
-});
-
-$('.finance').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsFinance').css('display','flex');
-});
-
-$('.society').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsSociety').css('display','flex');
-});
-
-$('.sport').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsSport').css('display','flex');
-});
-
-$('.sport').click(function(){
-    $('.newsList div > div').hide();
-    $('.newsList div > div.newsSport').css('display','flex');
-});
+// 自動調整iframe高度
+function resize() {
+    parent.document.getElementById("mainframe").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
+}
 
 // 讀取新聞資料
 const uri = "https://taiwan-train-api.herokuapp.com/news/";
@@ -71,8 +16,6 @@ fetch(uri, {
 .then(result => {
     console.log(result);
     var dataList = result.length;
-    console.log(dataList);
-    console.log(result[1].lable);
     // 如果有撈到資料
     // newsFocus 焦點新聞
     // newsPolitics 政治新聞
@@ -85,8 +28,6 @@ fetch(uri, {
 
     for (count = 0; count < dataList; count++) {
         var news = result[count];
-        console.log(count);
-        console.log(news.lable);
         if(news.lable=='column'){
             $('.newsList > div').append(
                 '<div class="newsContent newsFocus">'+

@@ -13,10 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 </head>
 
-<body>
+<body onload="resize();">
     <div class="hint"><p>請使用行動裝置瀏覽</p></div>
     
     <div class="bg" style="display:none;"></div>
+    <!-- <div class="pop" style="z-index:99999;display: none;">
+        <iframe src="https://www.nownews.com/news/20200217/3940586/" name="mainframe" id="mainframe"
+            width="100%" marginwidth="0" marginheight="0" scrolling="No" frameborder="0" style="margin-top: -185px;">
+        </iframe>
+    </iframe></div> -->
     <div id="news" class="news">
         <div class="area-title">
             <div class="title">JONEWS</div>
@@ -58,10 +63,24 @@
         </div>
         <div class="ad"></div>
     </div>
-    
+   
+    <script>
+        // 跳頁
+$('.newsList > div > .newsContent').click(function(){
+  var y =$(this).index();
+  console.log(y);
+  alert("aaa");
+});
+
+// 複製連結
+$('.newslink').click(function(){
+   alert("aaa");
+});
+    </script>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/newsData.js"></script>
+<script src="js/goToPage.js"></script>
 <script src="js/weather.js"></script>
 </html>
