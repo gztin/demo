@@ -39,7 +39,7 @@ fetch(uri, {
                     '</a>'+
                     '<p><span class="onTime">'+
                     news.date+
-                    '</span><span class="newslink"></span></p>'+
+                    '</span></p>'+
                 '</li>'
             );
         }
@@ -54,7 +54,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -69,7 +69,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -84,7 +84,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -99,7 +99,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -114,7 +114,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -129,7 +129,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -144,7 +144,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
@@ -159,7 +159,7 @@ fetch(uri, {
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
-                '</span><span class="newslink"></span></p>'+
+                '</span></p>'+
                 '</li>'
             );
         }
