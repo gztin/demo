@@ -73,14 +73,14 @@ $('.sport').click(function(){
 
 
 // 跳頁
-$('#newsGroup').on('click','li',function(){
-  var y =$(this).index();
-  var geturl = $('#newsGroup > li').eq(y).find('a').attr("href");
-  console.log(geturl);
-  document.getElementById("popView").src = geturl;
-  $('.popView').css('display','flex');
+// $('#newsGroup').on('click','li',function(){
+//   var y =$(this).index();
+//   var geturl = $('#newsGroup > li').eq(y).find('a').attr("href");
+//   console.log(geturl);
+//   document.getElementById("popView").src = geturl;
+//   $('.popView').css('display','flex');
   
-});
+// });
 
 // 複製連結
 // $('#newsGroup').on('click','span.newslink',function(){

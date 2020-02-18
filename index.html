@@ -22,10 +22,11 @@
     </iframe></div>
     <div id="news" class="news">
         <div class="area-title">
-            <div class="title">JONEWS4</div>
+            <div class="title">{{title}}</div>
         </div>
         <div class="navbar">
             <div class="menu">
+                <!-- <span v-for="span on newsCategory" :class="span.className">{{span.title}}</span> -->
                 <span class="all cur">綜合</span>
                 <span class="focus">焦點</span>
                 <span class="politics">政治</span>
@@ -41,7 +42,7 @@
             <ul id="newsGroup"></ul>
         </div>
     </div>
-    <div id="weather">
+    <!-- <div id="weather">
         <div class="container">
             <div class="weatherInf">
                 <div class="tempInf"></div>
@@ -57,7 +58,7 @@
             <a class="gotoThsr" href="tshrTrain.html"><span >高鐵時刻表查詢</span></a>
         </div>
         <div class="ad"></div>
-    </div>
+    </div> -->
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>

@@ -1,4 +1,22 @@
 
+let data = {
+    newsCategory:[
+        {className:'all',title:'綜合'},
+        {className:'focus',title:'焦點'},
+        {className:'politics',title:'政治'},
+        {className:'gossiping',title:'八卦'},
+        {className:'entertainment',title:'娛樂'},
+        {className:'global',title:'國際'},
+        {className:'finance',title:'金融'},
+        {className:'society',title:'社會'},
+        {className:'sport',title:'體育'}
+    ],
+    title:'JOJONEWS'
+}
+let vm = new Vue({
+    el:'#news',
+    data:data
+});
 
 
 
@@ -29,10 +47,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsFocus">'+
                     '<p><span class="classTitle">焦點</span></p>'+
-                    '<div>'+news.title+'</div>'+
                     '<a id="linkURL" target="_parent" href="'+
                     news.url+
                     '">'+
+                    news.title+
                     '</a>'+
                     '<p><span class="onTime">'+
                     news.date+
@@ -44,10 +62,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsPolitics">'+
                 '<p><span class="classTitle">政治</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -59,10 +77,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsEntertainment">'+
                 '<p><span class="classTitle">娛樂</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -74,10 +92,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsPolitics>'+
                 '<p><span class="classTitle">政治</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -89,10 +107,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsFinance">'+
                 '<p><span class="classTitle">金融</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -104,10 +122,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsSociety">'+
                 '<p><span class="classTitle">社會</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -119,10 +137,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsGlobal">'+
                 '<p><span class="classTitle">國際</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -134,10 +152,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsSport">'+
                 '<p><span class="classTitle">體育</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
@@ -149,10 +167,10 @@ fetch(uri, {
             $('.newsList > ul').append(
                 '<li class="newsContent newsGossiping">'+
                 '<p><span class="classTitle">八卦</span></p>'+
-                '<div>'+news.title+'</div>'+
                 '<a id="linkURL" target="_parent" href="'+
                 news.url+
                 '">'+
+                news.title+
                 '</a>'+
                 '<p><span class="onTime">'+
                 news.date+
