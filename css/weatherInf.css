@@ -56,6 +56,16 @@ html, body {
     padding: 3% 0 3% 30%;
     font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
 }
+.indexPlace{
+    border:none;
+    background: #172733;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
+    width: 50%;
+    padding: 3% 0 3% 13%;
+}
 .location{
     display: flex;
     padding-left: 5%;
@@ -141,11 +151,41 @@ day3:下雨
         margin-right: 4%;
     }
 @media screen and (max-width:480px){
+    /* 側邊攔 */
+    .sideBlock:nth-child(1){
+        display:flex;
+        flex-direction: column;
+        height:30%;
+        background: #c3c3c3;
+    }
+    .sideBlock:nth-child(2){
+        display:flex;
+        height: 35%;
+        background: #e8e8e8;
+    }
+    .sideBlock:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+    }
+    .placeInf{
+        display: flex;
+        justify-content: center;
+    }
+    .dayBlock{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     #weather{
         width:100%;
         margin:0 auto;
         height:43%;
-        bottom: -186px;
         position: fixed;
         left: 0px;
         background:#D3D0CB;
@@ -234,8 +274,8 @@ day3:下雨
         font-size:15px; 
     }
     .status{
-        font-size: 15px;
-        color:#0f0909;
+        display: flex;
+        justify-content: center;
     }
     .weatherIcon{
         border-right: 1px solid #afafaf;
@@ -263,6 +303,48 @@ day3:下雨
         background-size: contain;
     }
     
+    /*
+    day1:多雲時晴
+    day2:多雲
+    day3:下雨
+    */
+    .day1,.detailDay1,.index-day1{background: url(../img/day1.png)no-repeat;}
+    .day2,.detailDay2,.index-day2{background: url(../img/day2.png)no-repeat;}
+    .day3,.detailDay3,.index-day3{background: url(../img/day3.png)no-repeat;}
+    .day4,.detailDay4,.index-day4{background: url(../img/day4.png)no-repeat;}
+    
+    .day1,.day2,.day3{
+        width: 55px;
+        height: 55px;
+        margin: 2px;
+        display: block;
+        background-size: contain;
+    }
+    
+    .index-day1,
+    .index-day2,
+    .index-day3,
+    .index-day4{
+        width: 120px;
+        height: 120px;
+        margin: 5%;
+        display: block;
+        background-size: contain;
+    }
+
+    .detailDay1,
+    .detailDay2,
+    .detailDay3,
+    .detailDay4{
+        width: 55px;
+        height: 55px;
+        /* margin: 12%; */
+        display: block;
+        background-size: contain;
+    }
+    
+    
+
     .cUnit{
         font-size: 20px;
     }
@@ -286,6 +368,33 @@ day3:下雨
     }
 }
 @media screen and (max-width:375px) and (max-height:600px){
+    
+    /* 側邊攔 */
+    .sideBlock:nth-child(1){
+        display:flex;
+        flex-direction: column;
+        height:30%;
+        background: #c3c3c3;
+    }
+    .sideBlock:nth-child(2){
+        display:flex;
+        height: 35%;
+        background: #e8e8e8;
+    }
+    .placeInf{
+        display: flex;
+        justify-content: center;
+    }
+    .dayBlock{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* end */
+    
     #weather{
         width:100%;
         margin:0 auto;
@@ -386,9 +495,10 @@ day3:下雨
     day2:多雲
     day3:下雨
     */
-    .day1{background: url(../img/day1.png)no-repeat;}
-    .day2{background: url(../img/day2.png)no-repeat;}
-    .day3{background: url(../img/day3.png)no-repeat;}
+    .day1,.detailDay1,.index-day1{background: url(../img/day1.png)no-repeat;}
+    .day2,.detailDay2,.index-day2{background: url(../img/day2.png)no-repeat;}
+    .day3,.detailDay3,.index-day3{background: url(../img/day3.png)no-repeat;}
+    .day4,.detailDay4,.index-day4{background: url(../img/day4.png)no-repeat;}
     
     .day1,.day2,.day3{
         width: 55px;
@@ -398,6 +508,27 @@ day3:下雨
         background-size: contain;
     }
     
+    .index-day1,
+    .index-day2,
+    .index-day3,
+    .index-day4{
+        width: 120px;
+        height: 120px;
+        margin: 5%;
+        display: block;
+        background-size: contain;
+    }
+
+    .detailDay1,
+    .detailDay2,
+    .detailDay3,
+    .detailDay4{
+        width: 55px;
+        height: 55px;
+        /* margin: 12%; */
+        display: block;
+        background-size: contain;
+    }
     
     .cUnit{
         font-size: 20px;

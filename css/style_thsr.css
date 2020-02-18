@@ -130,7 +130,7 @@
             font-size: 25px;
         }
         /*  高鐵班次查詢*/
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             width:100%;
             height: 70px;
             border-radius: 10px;
@@ -139,7 +139,7 @@
             justify-content: center;
             color:#fff;
         }
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             font-size:24px;
         }
         .gotoTrain{
@@ -150,7 +150,7 @@
         .gotoTrain span{
             color:#fff;
         }
-        .stock{
+        .pokenews{
             background: #ce3337;
         }
         .switch{
@@ -554,7 +554,7 @@
             font-size: 25px;
         }
         /*  高鐵班次查詢*/
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             width:100%;
             height: 70px;
             border-radius: 10px;
@@ -563,7 +563,7 @@
             justify-content: center;
             color:#fff;
         }
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             font-size:24px;
         }
         .gotoTrain{
@@ -574,7 +574,7 @@
         .gotoTrain span{
             color:#fff;
         }
-        .stock{
+        .pokenews{
             background: #ce3337;
         }
         .switch{
@@ -915,7 +915,7 @@
             font-size: 25px;
         }
         /*  高鐵班次查詢*/
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             width:100%;
             height: 70px;
             border-radius: 10px;
@@ -924,7 +924,7 @@
             justify-content: center;
             color:#fff;
         }
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             font-size:24px;
         }
         .gotoTrain{
@@ -935,7 +935,7 @@
         .gotoTrain span{
             color:#fff;
         }
-        .stock{
+        .pokenews{
             background: #ce3337;
         }
         .switch{
@@ -1277,7 +1277,7 @@
             font-size: 25px;
         }
         /*  高鐵班次查詢 */
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             width:100%;
             height: 70px;
             border-radius: 10px;
@@ -1286,7 +1286,7 @@
             justify-content: center;
             color:#fff;
         }
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             font-size:24px;
         }
         .gotoTrain{
@@ -1297,7 +1297,7 @@
         .gotoTrain span{
             color:#fff;
         }
-        .stock{
+        .pokenews{
             background: #ce3337;
         }
         .switch{
@@ -1314,7 +1314,7 @@
             -webkit-appearance:none;
         }
         /*  高鐵班次查詢*/
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             width:100%;
             height: 70px;
             border-radius: 10px;
@@ -1323,7 +1323,7 @@
             justify-content: center;
             color:#fff;
         }
-        .stock,.gotoTrain{
+        .pokenews,.gotoTrain{
             font-size:24px;
         }
         .gotoTrain{
@@ -1335,7 +1335,7 @@
             color:#fff;
         }
         
-        .stock{
+        .pokenews{
             background: #ce3337;
         }
         .rotated { 

@@ -11,7 +11,7 @@ let data = {
       {className:'society',title:'社會'},
       {className:'sport',title:'體育'}
   ],
-  title:'口袋新聞'
+  title:'POKENEWS'
 }
 let vm = new Vue({
   el:'#news',
@@ -28,8 +28,8 @@ $('.area-title > span').click(function(){
 });
 // 隱藏側邊欄位
 $('.sideMenuBg').click(function(){
-  $('.sideMenuBg').hide();
   $('.sideMenu').css('left','-70%');
+  $('.sideMenuBg').hide();
 });
 
 // 切換類別
