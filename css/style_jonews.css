@@ -266,12 +266,12 @@
             position: fixed;
         }
         .menu{
-            display: flex;
             background: #fff;
             align-items: center;
             justify-content: space-around;
             width: 720px;
             height: 50px;
+            display: none;
         }
         .menu span{
             padding: 10px;
