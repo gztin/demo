@@ -150,6 +150,11 @@
     }
     
     @media screen and (max-width:500px) { 
+        select{
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+        }
         .msg{
             color:#fff;
             font-size: 20px;
@@ -423,6 +428,11 @@
 
     /* iphone6/7/8plus */
     @media screen and (max-width:414px) and (max-height:750px){
+        select{
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+        }
         .hint{
             display:none;
         }
@@ -457,6 +467,11 @@
 
     /*    iphone5*/
     @media screen and (max-width:375px) and (max-height:600px){
+        select{
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+        }
         .hint{display: none;}
         
         /*  高鐵班次查詢*/
