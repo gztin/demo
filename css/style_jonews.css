@@ -53,7 +53,6 @@
             justify-content: center;
             color:#fff;
             font-size:24px;
-            margin-bottom: 10%;
             text-decoration: none;
         }
         
@@ -61,6 +60,8 @@
             color:#fff;
         }
         .indexLink1{
+            margin-bottom: 10%;
+            margin-top: 10%;
             background: #ff9a17;
         }
         .indexLink2{
@@ -411,13 +412,14 @@
             justify-content: center;
             color:#fff;
             font-size:24px;
-            margin-bottom: 10%;
             text-decoration: none;
         }
         .indexLink2 span{
             color:#fff;
         }
         .indexLink1{
+            margin-bottom: 10%;
+            margin-top: 10%;
             background: #ff9a17;
         }
         .indexLink2{
@@ -450,13 +452,14 @@
             justify-content: center;
             color:#fff;
             font-size:24px;
-            margin-bottom: 10%;
             text-decoration: none;
         }
         .indexLink2 span{
             color:#fff;
         }
         .indexLink1{
+            margin-bottom: 10%;
+            margin-top: 10%;
             background: #ff9a17;
         }
         .indexLink2{
@@ -484,7 +487,6 @@
             justify-content: center;
             color:#fff;
             font-size:24px;
-            margin-bottom: 10%;
             text-decoration: none;
         }
         .indexLink2 span{
@@ -494,6 +496,8 @@
             background: #ce3337;
         }
         .indexLink2{
+            margin-bottom: 10%;
+            margin-top: 10%;
             background: #16222c;
         }
         .rotated { 
