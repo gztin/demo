@@ -1,4 +1,25 @@
 // 切換項目
+let data = {
+  newsCategory:[
+      {className:'all',title:'綜合'},
+      {className:'focus',title:'焦點'},
+      {className:'politics',title:'政治'},
+      {className:'gossiping',title:'八卦'},
+      {className:'entertainment',title:'娛樂'},
+      {className:'global',title:'國際'},
+      {className:'finance',title:'金融'},
+      {className:'society',title:'社會'},
+      {className:'sport',title:'體育'}
+  ],
+  title:'口袋新聞'
+}
+let vm = new Vue({
+  el:'#news',
+  data:data
+});
+
+
+$('.menu span').eq(0).addClass('cur');
 
 $('.menu span').click(function(){
   var x =$(this).index();
@@ -12,7 +33,6 @@ $('.all').click(function(){
 
 $('.focus').click(function(){
   $('.popView').hide();
-  
   $('.newsList ul > li').hide();
   $('.newsList ul > li.newsFocus').css('display','flex');
 });

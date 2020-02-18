@@ -2,62 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
     <title>JONEWS</title>
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="bookmark" href="/favicon.ico"/>
-    <!-- <link rel="stylesheet" href="./css/weatherInf.css?v=7"> -->
     <link rel="stylesheet" href="./css/style_jonews.css?v=1">
     <script data-ad-client="ca-pub-8237624738906861" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
 </head>
 
 <body>
+    <div class="loading">
+        <p>讀取資料中</p>
+        <p>
+            <i class="fas fa-square"></i>
+            <i class="fas fa-square"></i>
+            <i class="fas fa-square"></i>
+        </p>
+    </div>
     <div class="hint"><p>請使用行動裝置瀏覽</p></div>
     <div class="bg" style="display:none;"></div>
     <div id="news" class="news">
         <div class="area-title">
+            <span><i class="fas fa-bars"></i></span>
             <p class="title">{{title}}</p>
+            <span></span>
         </div>
         <div class="navbar">
             <div class="menu">
-                <!-- <span v-for="span on newsCategory" :class="span.className">{{span.title}}</span> -->
-                <span class="all cur">綜合</span>
-                <span class="focus">焦點</span>
-                <span class="politics">政治</span>
-                <span class="gossiping">八卦</span>
-                <span class="entertainment">娛樂</span>
-                <span class="global">國際</span>
-                <span class="finance">金融</span>
-                <span class="society">社會</span>
-                <span class="sport">體育</span>
+                <span :class="item.className" v-for="item in newsCategory">{{item.title}}</span>
             </div>
         </div>
         <div class="newsList">
             <ul id="newsGroup"></ul>
         </div>
     </div>
-    <!-- <div id="weather">
-        <div class="container">
-            <div class="weatherInf">
-                <div class="tempInf"></div>
-                <div class="weatherIcon"></div>
-                <div class="location">
-                    <select id="place" class="place" onchange="changeLocation()"></select>
-                    <div class="chanceRain"></div>
-                </div>
-            </div>
-        </div>
-        <div class="linkArea">
-            <a class="gotoTrain" href="tieTrain.html"><span>台鐵時刻表查詢</span></a>
-            <a class="gotoThsr" href="tshrTrain.html"><span >高鐵時刻表查詢</span></a>
-        </div>
-        <div class="ad"></div>
-    </div> -->
-    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/85155ffcd6.js"></script>
 <script src="js/newsData.js"></script>
 <script src="js/goToPage.js"></script>
 <script src="js/weather.js"></script>

@@ -159,6 +159,80 @@
         .hint{
             display:none;
         }
+        .loading{
+            display:flex;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+        }
+        .loading > p{
+            color:#fff;
+            font-size:25px;
+        }
+        .loading > p:nth-child(1){
+            margin-right:10px;
+        }
+        .loading > p > i:nth-child(1){
+            font-size:10px;
+            animation:loading 1s infinite linear;
+            -moz-animation:loading 1s infinite linear; /* Firefox */
+            -webkit-animation:loading 1s infinite linear; /* Safari and Chrome */
+            -o-animation:loading 1s infinite linear; /* Opera */
+        }
+        .loading > p > i:nth-child(2){
+            font-size:10px;
+            animation:loading 2s infinite linear;
+            -moz-animation:loading 2s infinite linear; /* Firefox */
+            -webkit-animation:loading 2s infinite linear; /* Safari and Chrome */
+            -o-animation:loading 2s infinite linear; /* Opera */
+        }
+        .loading > p > i:nth-child(3){
+            font-size:10px;
+            animation:loading 3s infinite linear;
+            -moz-animation:loading 3s infinite linear; /* Firefox */
+            -webkit-animation:loading 3s infinite linear; /* Safari and Chrome */
+            -o-animation:loading 3s infinite linear; /* Opera */
+        }
+        @keyframes loading
+        {
+            0% {opacity:1;}
+            25% {opacity:0.5;}
+            50% {opacity:0;}
+            75% {opacity:0.5;}
+            100% {opacity:1;}
+        }
+
+        @-moz-keyframes loading1 /* Firefox */
+        {
+            0% {opacity:1;}
+            25% {opacity:0.5;}
+            50% {opacity:0;}
+            75% {opacity:0.5;}
+            100% {opacity:1;}
+        }
+
+        @-webkit-keyframes loading1 /* Safari and Chrome */
+        {
+            0% {opacity:1;}
+            25% {opacity:0.5;}
+            50% {opacity:0;}
+            75% {opacity:0.5;}
+            100% {opacity:1;}
+        }
+
+        @-o-keyframes loading1 /* Opera */
+        {
+            0% {opacity:1;}
+            25% {opacity:0.5;}
+            50% {opacity:0;}
+            75% {opacity:0.5;}
+            100% {opacity:1;}
+        }
+        
+        
+
+        
+
         /* 新聞橫向區塊 */
         .news{
             margin: 0 auto;
@@ -170,11 +244,17 @@
             width:100%;
             height:50px;
             display:flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background: rgb(255, 224, 141);
             z-index:9999;
             position: fixed;
+        }
+        .area-title > span:nth-child(1){
+            margin-left:5%;
+        }
+        .area-title > span > i{
+            font-size:25px;
         }
         .navbar{
             height:50px;
@@ -203,7 +283,10 @@
             background: #000;
             color: #fff;
         }
-
+        .title{
+            font-size:25px;
+            font-weight:bold;
+        }
         /* 新聞列表 */
         .newsContent{
             width:95%;

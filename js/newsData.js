@@ -1,22 +1,5 @@
 
-let data = {
-    newsCategory:[
-        {className:'all',title:'綜合'},
-        {className:'focus',title:'焦點'},
-        {className:'politics',title:'政治'},
-        {className:'gossiping',title:'八卦'},
-        {className:'entertainment',title:'娛樂'},
-        {className:'global',title:'國際'},
-        {className:'finance',title:'金融'},
-        {className:'society',title:'社會'},
-        {className:'sport',title:'體育'}
-    ],
-    title:'JOJONEWS'
-}
-let vm = new Vue({
-    el:'#news',
-    data:data
-});
+
 
 
 
@@ -29,6 +12,7 @@ fetch(uri, {
     return res.json(); // 使用 text() 可以得到純文字 String
 })
 .then(result => {
+    $('.loading').css('display', 'none');
     console.log(result);
     var dataList = result.length;
     // 如果有撈到資料
