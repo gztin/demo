@@ -278,19 +278,6 @@
             background: url("../img/share1.png")no-repeat center center;
             background-size: contain;
         }
-        .popView{
-            z-index: 999999;
-            position: absolute;
-            width: 100%;
-            height: 86%;
-            margin-top: 25%;
-            overflow-y: auto;
-            display: none;
-        }
-        .popView > iframe {
-            overflow-x: hidden;
-	        overflow-y: scroll;
-        }
         /* end */
         
         /*底部資訊*/
@@ -437,6 +424,7 @@
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        font-family: Microsoft JhengHei,Noto Sans TC,sans-serif;
     }
     
     /* HTML5 display-role reset for older browsers */
@@ -474,3 +462,4 @@
         border:none;
         box-shadow:none;
     }
+    
