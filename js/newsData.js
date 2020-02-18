@@ -13,7 +13,7 @@ fetch(uri, {
 })
 .then(result => {
     $('.loading').css('display', 'none');
-    $('.menu').css('display', 'flex');
+    $('.navbar').css('display', 'block');
     console.log(result);
     var dataList = result.length;
     // 如果有撈到資料

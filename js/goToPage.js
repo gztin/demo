@@ -21,6 +21,18 @@ let vm = new Vue({
 
 $('.menu span').eq(0).addClass('cur');
 
+// 叫出側邊欄位
+$('.area-title > span').click(function(){
+  $('.sideMenuBg').show();
+  $('.sideMenu').css('left','0%');
+});
+// 隱藏側邊欄位
+$('.sideMenuBg').click(function(){
+  $('.sideMenuBg').hide();
+  $('.sideMenu').css('left','-70%');
+});
+
+// 切換類別
 $('.menu span').click(function(){
   var x =$(this).index();
   $('.menu span').eq(x).addClass('cur').siblings().removeClass('cur');
