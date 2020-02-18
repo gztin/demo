@@ -160,7 +160,7 @@ day3:下雨
     }
     .sideBlock:nth-child(2){
         display:flex;
-        height: 35%;
+        height: 30%;
         background: #e8e8e8;
     }
     .sideBlock:nth-child(3){
@@ -168,7 +168,7 @@ day3:下雨
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35;
+        height: auto;
     }
     .placeInf{
         display: flex;
@@ -378,7 +378,7 @@ day3:下雨
     }
     .sideBlock:nth-child(2){
         display:flex;
-        height: 35%;
+        height: 30%;
         background: #e8e8e8;
     }
     .sideBlock:nth-child(3){
@@ -386,7 +386,7 @@ day3:下雨
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35%;
+        height: auto;
     }
     .placeInf{
         display: flex;
