@@ -22,7 +22,7 @@
             font-size: 2em;
             font-weight: bold;
         }
-        #news,#weather,.sideMenu{display: none;}
+        #news,#weather,.sideMenu,.loading{display: none;}
     }
 
     /* 預留 ipad 版型*/
@@ -41,7 +41,7 @@
             font-size: 2em;
             font-weight: bold;
         }
-        #news,#weather,.sideMenu{display:none;}
+        #news,#weather,.sideMenu,.loading{display:none;}
         
         /*  高鐵班次查詢*/
         .indexLink1,.indexLink2{
