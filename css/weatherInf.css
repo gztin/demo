@@ -196,7 +196,6 @@ day3:下雨
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         box-shadow: 1px 10px 30px #8ab5dc;
-        z-index:999;
     }
 
     .container{
