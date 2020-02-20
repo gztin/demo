@@ -11,7 +11,7 @@ let data = {
       {className:'society',title:'社會'},
       {className:'sport',title:'體育'}
   ],
-  title:'POKENEWS'
+  title:'POKEJO'
 }
 let vm = new Vue({
   el:'#news',
