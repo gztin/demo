@@ -56,7 +56,6 @@
     </div>
     <div class="sideMenuBg"></div>
     <div id="news" class="news">
-
         <div class="area-title">
             <span><i class="fas fa-bars"></i></span>
             <p class="title">POKEJO</p>
@@ -67,11 +66,7 @@
                 <span :class="item.className" v-for="item in newsCategory">{{item.title}}</span>
             </div>
         </div>
-        <div class="popView">
-            <iframe id="popView" src="link" name="mainframe" id="mainframe"
-                width="100%" height="auto" marginwidth="0" marginheight="0" frameborder="0">
-            </iframe>
-        </div>
+        <div class="popView"></div>
         <div class="newsList">
             <ul id="newsGroup"></ul>
         </div>
