@@ -4,7 +4,7 @@ let data = {
   title:'<h1>P<i class="far fa-dot-circle"></i>KEJ<i class="far fa-dot-circle"></i></h1>',
   slogan:'<h1 class="animated bounceIn">P<i class="far fa-dot-circle"></i>KEJ<i class="far fa-dot-circle"></i></h1><h1 class="animated bounceIn">帶您時事脈動一把抓</h1>',
   privacy:'/privacy.html',
-  copyright:'copyright by POKEJO',
+  copyright:'POKEJO時事脈動一把抓',
   newsCategory:[
       // {className:'all',title:'綜合'},
       {className:'global',title:'國際'},
