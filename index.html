@@ -30,7 +30,7 @@
         <div class="sideBlock">
             <div class="status"></div>
             <div class="placeInf">
-                <select id="indexPlace" class="indexPlace" onchange="changeLocation()"></select>
+                <select id="indexPlace" class="indexPlace" onchange="changeSidepage()"></select>
             </div>
         </div>
         <div class="sideBlock">
@@ -76,7 +76,7 @@
         <div class="headerBlock">
             <div class="header-hint">
                 <div class="selectPlace">
-                    <select class="fieldInf" onchange="changePlace();changeField()"></select>
+                    <select class="fieldInf" onchange="changePlaceweather();changePlaceair()"></select>
                     <div class="airInf"></div>
                 </div>
                 <div class="weatherNow"></div>
@@ -106,7 +106,6 @@
 <script src="https://kit.fontawesome.com/85155ffcd6.js"></script>
 <script src="js/newsData.js"></script>
 <script src="js/airInf.js"></script>
-<script src="js/mask.js"></script>
 <script src="js/goToPage.js"></script>
 <script src="js/sideViewWeather.js"></script>
 </html>
